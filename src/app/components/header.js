@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
+import logoUrl from '../../images/logo-white.svg';
 
 const styles = {
   header: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#1f1f1f'
+    backgroundColor: '#1f1f1f',
+    opacity: '0.6'
   },
   title: {
     flex: 1,
     fontSize: '1.5rem',
     margin: '1rem'
-  },
-  date: {
-    flex: 1,
-    textAlign: 'right',
-    margin: '1rem',
-    color: 'white'
   }
 };
 
@@ -24,12 +20,10 @@ export class Header extends Component {
     return (
       <header style={styles.header}>
         <p style={styles.title}>
-          <a href="https://github.com/FountainJS/generator-fountain-webapp" target="_blank">
-            Fountain Generator
+          <img src={logoUrl} width="24" height="24" alt="Bastien Scanu"/>
+          <a href="http://www.bastien-scanu.com" target="_blank">
+            Bastien Scanu
           </a>
-        </p>
-        <p style={styles.date}>
-          Generated with FountainJS v1.0.0-rc1 on Sat Sep 24 2016 13:01:06 GMT+0200 (CEST)
         </p>
       </header>
     );

@@ -27,7 +27,7 @@ export class Techs extends Component {
 
   componentDidMount() {
     axios
-      .get('app/techs/techs.json')
+      .get('app/components/techs/techs.json')
       .then(response => {
         this.setState({techs: response.data});
       });

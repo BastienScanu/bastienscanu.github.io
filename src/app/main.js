@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {Header} from './header';
-import {Title} from './title';
-import {Techs} from './techs/techs';
-import {Footer} from './footer';
+import {Header} from './components/header';
+import {Title} from './components/title';
+import {Techs} from './components/techs/techs';
+import {Footer} from './components/footer';
 
 const styles = {
   container: {
