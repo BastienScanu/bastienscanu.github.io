@@ -38,6 +38,10 @@ module.exports = {
           'react-hot',
           'babel'
         ]
+      },
+      {
+        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        loader: "file-loader"
       }
     ]
   },
