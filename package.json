@@ -1,4 +1,7 @@
 {
+  "description": "Bastien Scanu personal website",
+  "repository": "https://bitbucket.org/Bastien42/dev",
+  "license": "Hello",
   "dependencies": {
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
