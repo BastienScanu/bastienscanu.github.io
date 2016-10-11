@@ -1,12 +1,10 @@
 import 'babel-polyfill';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, browserHistory} from 'react-router';
 
 import {Main} from './app/main';
-
-import './index.scss';
+import './app/style/main.scss';
 
 ReactDOM.render(
   <Router history={browserHistory}>

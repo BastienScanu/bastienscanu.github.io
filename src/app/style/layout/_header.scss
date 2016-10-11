@@ -1,3 +1,12 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+header {
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  opacity: 0.6;
+
+  .title {
+    flex: 1;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+}
