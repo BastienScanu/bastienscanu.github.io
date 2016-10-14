@@ -4,7 +4,7 @@ export class VideoContainer extends Component {
   render() {
     return (
       <div className="videocontainer">
-        <div className="container overlay">
+        <div className="overlay">
           {this.props.children}
         </div>
         <video id="background-video" loop autoPlay>
