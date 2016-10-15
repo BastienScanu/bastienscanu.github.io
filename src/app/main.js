@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {Header} from './components/header';
 import {Home} from './components/home';
-import {Title} from './components/title';
-import {Techs} from './components/techs/techs';
 import {MyFooter} from './components/footer';
+import {Experience} from './components/experience';
+import {Contact} from './components/contact';
+import {Skills} from './components/skills';
 import {VideoContainer} from './components/videocontainer';
 
 export class Main extends Component {
@@ -18,8 +19,9 @@ export class Main extends Component {
             >
             <Home/>
           </VideoContainer>
-          <Title/>
-          <Techs/>
+          <Skills/>
+          <Experience/>
+          <Contact/>
         </main>
         <MyFooter/>
       </div>
