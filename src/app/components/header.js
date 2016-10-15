@@ -8,10 +8,10 @@ export class Header extends Component {
         <div className="container">
           <Logo size={48} white/>
           <ul className="navBar">
-            <li>Accueil</li>
-            <li>Compétences</li>
-            <li>Parcours</li>
-            <li>Contact</li>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experience">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <ul className="langs">
             <li>EN</li>

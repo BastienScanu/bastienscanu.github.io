@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
-export class Home extends Component {
+export class Contact extends Component {
   render() {
     return (
-      <div id="home">
+      <div id="contact">
         <div className="container">
-          <h1>Hello !</h1>
-          <h2>I'm a web developper</h2>
+          <h1>Contact</h1>
+          <h2>Contactez moi</h2>
         </div>
       </div>
     );

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
-export class Home extends Component {
+export class Skills extends Component {
   render() {
     return (
-      <div id="home">
+      <div id="skills">
         <div className="container">
-          <h1>Hello !</h1>
-          <h2>I'm a web developper</h2>
+          <h1>Compétences</h1>
+          <h2>Je suis super fort</h2>
         </div>
       </div>
     );
