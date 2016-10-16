@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Logo} from './logo';
+const Scrollspy = require('react-scrollspy').Scrollspy;
 
 export class Header extends Component {
   render() {
@@ -7,12 +8,12 @@ export class Header extends Component {
       <header>
         <div className="container">
           <Logo size={48} white/>
-          <ul className="navBar">
+          <Scrollspy items={['home', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
             <li><a href="#home">Accueil</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#experience">Parcours</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
+          </Scrollspy>
           <ul className="langs">
             <li>EN</li>
             <li>FR</li>
