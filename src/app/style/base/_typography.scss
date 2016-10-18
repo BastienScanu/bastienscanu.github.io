@@ -5,3 +5,41 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+h1 {
+  font-family: $text-font-stack;
+  font-size: 4em;
+  font-weight: 300;
+  line-height: 1;
+}
+
+h2 {
+  font-family: $text-font-stack;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+h3 {
+    font-family: $text-font-stack;
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+
+h4 {
+  font-family: $text-font-stack;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: $text-font-stack;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: $text-font-stack;
+  font-size: 1.25em;
+  font-weight: 500;
+}
