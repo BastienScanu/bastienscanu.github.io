@@ -12,6 +12,14 @@
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
 main {
   flex: 1;
   display: flex;
@@ -20,6 +28,12 @@ main {
 
 .panel {
   background: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
 }
 
 /**
