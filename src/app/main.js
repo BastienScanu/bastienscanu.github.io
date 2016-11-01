@@ -5,7 +5,7 @@ import {MyFooter} from './components/footer';
 import {Experience} from './components/experience';
 import {Contact} from './components/contact';
 import {Skills} from './components/skills';
-import {About} from './components/about';
+import About from './components/about';
 import {VideoContainer} from './components/videocontainer';
 
 export class Main extends Component {
