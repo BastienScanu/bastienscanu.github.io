@@ -1,8 +1,17 @@
 import React, {Component} from 'react';
 import {Logo} from './logo';
+import i18n from 'i18next';
 const Scrollspy = require('react-scrollspy').Scrollspy;
 
 export class Header extends Component {
+  handleClickEn() {
+    i18n.changeLanguage("en");
+  }
+
+  handleClickFr() {
+    i18n.changeLanguage("fr");
+  }
+
   render() {
     return (
       <header>
@@ -16,9 +25,8 @@ export class Header extends Component {
             <li><a href="#contact">Contact</a></li>
           </Scrollspy>
           <ul className="langs">
-            <li>EN</li>
-            <li>FR</li>
-            <li>ES</li>
+            <li onClick={this.handleClickEn}>EN</li>
+            <li onClick={this.handleClickFr}>FR</li>
           </ul>
         </div>
       </header>
