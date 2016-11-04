@@ -1,3 +1,4 @@
 {
-  "test": "Hello !"
+  "title": "About",
+  "baseline": "I'm the best !"
 }
