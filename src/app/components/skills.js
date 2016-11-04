@@ -1,14 +1,22 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
+import {translate} from 'react-i18next';
 
-export class Skills extends Component {
+class Skills extends Component {
   render() {
+    const {t} = this.props;
     return (
       <section id="skills">
         <div className="container">
-          <h1>Compétences</h1>
-          <h2>Je suis super fort</h2>
+          <h1>{t('skills:title')}</h1>
+          <h2>{t('skills:baseline')}</h2>
         </div>
       </section>
     );
   }
 }
+
+Skills.propTypes = {
+  t: PropTypes.func
+};
+
+export default translate(["common", "skills"], {wait: true})(Skills);

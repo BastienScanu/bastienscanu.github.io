@@ -1,11 +1,19 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
+import {translate} from 'react-i18next';
 
-export class MyFooter extends Component {
+class MyFooter extends Component {
   render() {
+    const {t} = this.props;
     return (
       <div>
-        <p>copy; 2016 Site réalisé par Bastien Scanu</p>
+        <p>{t('footer:copyright')}</p>
       </div>
     );
   }
 }
+
+MyFooter.propTypes = {
+  t: PropTypes.func
+};
+
+export default translate(["common", "footer"], {wait: true})(MyFooter);
