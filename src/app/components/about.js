@@ -14,8 +14,8 @@ class About extends Component {
             className="col-xs-12 col-sm-8 col-md-4 col-lg-3"
             />
           <div id="profilePic"></div>
-          <h1>About</h1>
-          <h2>{t('about:test')}</h2>
+          <h1>{t('about:title')}</h1>
+          <h2>{t('about:baseline')}</h2>
         </div>
       </section>
     );
