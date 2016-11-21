@@ -18,7 +18,7 @@ class Header extends Component {
     return (
       <header>
         <div className="container">
-          <Logo size={48} white/>
+          <Logo size={32} big/>
           <Scrollspy items={['home', 'about', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
             <li><a href="#home">{t('header:home')}</a></li>
             <li><a href="#about">{t('header:about')}</a></li>
