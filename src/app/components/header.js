@@ -1,23 +1,44 @@
-import React, {Component, PropTypes} from 'react';
+import React, {PropTypes} from 'react';
 import {Logo} from './logo';
 import i18n from 'i18next';
 const Scrollspy = require('react-scrollspy').Scrollspy;
 import {translate} from 'react-i18next';
+import FontIcon from 'material-ui/FontIcon';
+import {lightGreen50} from 'material-ui/styles/colors';
 
-class Header extends Component {
+const Header = React.createClass({
+  getInitialState() {
+    return {
+      openedMenu: false
+    };
+  },
+
   handleClickEn() {
     i18n.changeLanguage("en");
-  }
+  },
 
   handleClickFr() {
     i18n.changeLanguage("fr");
-  }
+  },
+
+  handleClickMenu() {
+    this.setState(state => {
+      return {openedMenu: !state.openedMenu};
+    });
+  },
+
+  dynamicClass() {
+    return `header${this.state.openedMenu ? "Mobile" : ""}`;
+  },
 
   render() {
     const {t} = this.props;
     return (
-      <header>
+      <header className={this.dynamicClass()}>
         <div className="container">
+          <div className="showMenu">
+            <FontIcon onClick={this.handleClickMenu} className="material-icons" color={lightGreen50}>menu</FontIcon>
+          </div>
           <Logo size={32} big/>
           <Scrollspy items={['home', 'about', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
             <li><a href="#home">{t('header:home')}</a></li>
@@ -34,11 +55,11 @@ class Header extends Component {
       </header>
 
     );
-  }
-}
+  },
 
-Header.propTypes = {
-  t: PropTypes.func
-};
+  propTypes: {
+    t: PropTypes.func
+  }
+});
 
 export default translate(["common", "header"], {wait: true})(Header);
