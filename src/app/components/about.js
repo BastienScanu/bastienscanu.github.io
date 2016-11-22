@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {translate} from 'react-i18next';
+import FontIcon from 'material-ui/FontIcon';
 
 class About extends Component {
   render() {
@@ -8,7 +9,18 @@ class About extends Component {
       <section id="about">
         <div className="container">
           <div className="row">
-            <div id="profilePic" className="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+            <div id="profilePicCol" className="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+              <div id="profilePic" className="row">
+              </div>
+              <div className="row">
+                <button
+                  className="resumeButton"
+                  href="http://bastien-scanu.com/CV.pdf"
+                  target="_blank"
+                  >
+                  <FontIcon className="material-icons" color="white">cloud_download</FontIcon> {t('about:cv')}
+                </button>
+              </div>
             </div>
             <p className="col-xs-12 col-sm-9 col-md-10 col-lg-10">{t('about:pitch')}</p>
           </div>
