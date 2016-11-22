@@ -6,10 +6,18 @@
   padding-top: -80px;
   background-color: white;
 
-  #profilePic {
+  #profilePicCol {
     position: relative;
-    min-height: 200px;
     top: -100px;
+
+    .resumeButton {
+      margin: auto;
+      text-transform: uppercase;
+    }
+  }
+
+  #profilePic {
+    min-height: 200px;
     background: url("../../images/profile.png") no-repeat center;
     background-size: contain;
   }
