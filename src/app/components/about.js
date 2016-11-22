@@ -7,15 +7,11 @@ class About extends Component {
     return (
       <section id="about">
         <div className="container">
-          <img
-            src="../../images/profile.png"
-            alt="Bastien Scanu"
-            id="profilePic"
-            className="col-xs-12 col-sm-8 col-md-4 col-lg-3"
-            />
-          <div id="profilePic"></div>
-          <h1>{t('about:title')}</h1>
-          <h2>{t('about:baseline')}</h2>
+          <div className="row">
+            <div id="profilePic" className="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+            </div>
+            <p className="col-xs-12 col-sm-9 col-md-10 col-lg-10">{t('about:pitch')}</p>
+          </div>
         </div>
       </section>
     );
