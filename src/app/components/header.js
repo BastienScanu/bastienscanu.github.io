@@ -40,9 +40,8 @@ const Header = React.createClass({
             <FontIcon onClick={this.handleClickMenu} className="material-icons" color={lightGreen50}>menu</FontIcon>
           </div>
           <Logo size={32} big/>
-          <Scrollspy items={['home', 'about', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
+          <Scrollspy items={['home', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
             <li><a href="#home">{t('header:home')}</a></li>
-            <li><a href="#about">{t('header:about')}</a></li>
             <li><a href="#skills">{t('header:skills')}</a></li>
             <li><a href="#experience">{t('header:experience')}</a></li>
             <li><a href="#contact">{t('header:contact')}</a></li>
