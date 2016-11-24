@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the card component.
+// -----------------------------------------------------------------------------
+
+.jobCard, .jobCardDetails {
+
+  h1 {
+    font-size: 1em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 0.8em;
+  }
+
+  h2 {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 0.8em;
+  }
+
+  .cardHeader {
+    padding: 5px 5px 5px 16px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .cardHeaderIcon {
+      padding-top: 5px;
+    }
+  }
+
+  .cardDetails {
+    padding: 5px 16px;
+
+    p {
+      font-size: 0.7em;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.54);
+      line-height: 0.8em;
+    }
+  }
+}
+
+.jobCard {
+  .cardDetails {
+    display: none;
+  }
+
+  .cardMedia {
+    display: block;
+  }
+}
+
+.jobCardDetails {
+  .cardDetails {
+    display: block;
+  }
+
+  .cardMedia {
+    display: none;
+  }
+}

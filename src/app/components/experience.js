@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {translate} from 'react-i18next';
+import JobCard from './jobCard';
 
 class Experience extends Component {
   render() {
@@ -8,7 +9,7 @@ class Experience extends Component {
       <section id="experience">
         <div className="container">
           <h1>{t('experience:title')}</h1>
-          <h2>{t('experience:baseline')}</h2>
+          <JobCard name="umi"/>
         </div>
       </section>
     );
