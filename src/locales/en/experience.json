@@ -1,4 +1,13 @@
 {
   "title": "Experience",
-  "baseline": "What I've done"
+  "baseline": "What I've done",
+  "company": "Company",
+  "mission": "Mission",
+  "umi": {
+    "date": "August 2015 - Now",
+    "company": "United Motion Ideas",
+    "job": "Design & Development Engineer",
+    "desc": "Start-up in Lyon",
+    "mission": "Search engine"
+  }
 }

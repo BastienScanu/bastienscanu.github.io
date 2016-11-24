@@ -1,4 +1,13 @@
 {
   "title": "Parcours",
-  "baseline": "J'ai fait plein de trucs cools"
+  "baseline": "J'ai fait plein de trucs cools",
+  "company": "Entreprise",
+  "mission": "Mission",
+  "umi": {
+    "date": "Août 2015 - Aujourd'hui",
+    "company": "United Motion Ideas",
+    "job": "Ingénieur conception et développement",
+    "desc": "Start-up à Lyon",
+    "mission": "Développement du module de recherche"
+  }
 }
