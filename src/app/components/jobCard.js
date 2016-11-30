@@ -19,7 +19,7 @@ const JobCard = React.createClass({
   },
 
   dynamicClass() {
-    return `col-xs-12 col-sm-5 col-md-4 col-lg-4 jobCard${this.state.seeDetails ? "Details" : ""}`;
+    return `jobCard${this.state.seeDetails ? "Details" : ""}`;
   },
 
   render() {
@@ -38,7 +38,7 @@ const JobCard = React.createClass({
           </div>
           <div className="cardMedia">
             <CardMedia overlay={<CardTitle title={t(`experience:${this.props.name}.date`)}/>}>
-              <img src={"images/umi.png"}/>
+              <img src={`images/${this.props.name}.png`}/>
             </CardMedia>
           </div>
           <div className="cardDetails">
@@ -55,6 +55,7 @@ const JobCard = React.createClass({
 
   propTypes: {
     t: PropTypes.func,
+    type: PropTypes.string,
     name: PropTypes.string
   }
 });
