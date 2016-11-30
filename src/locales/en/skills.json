@@ -1,4 +1,22 @@
 {
   "title": "Skills",
-  "baseline": "I know lots of things."
+  "technos": {
+    "angular": "AngularJS",
+    "react": "React",
+    "mongo": "MongoDB",
+    "nodejs": "Node.js",
+    "express": "Express",
+    "java": "Java",
+    "php": "PHP",
+    "sql": "SQL",
+    "c": "C/C++",
+    "html": "HTML5",
+    "css": "CSS3",
+    "docker": "Docker",
+    "git": "Git",
+    "scrum": "SCRUM",
+    "machine": "Machine Learning",
+    "socket": "Socket.io",
+    "es6": "ECMA Script 6"
+  }
 }
