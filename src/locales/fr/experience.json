@@ -4,10 +4,59 @@
   "company": "Entreprise",
   "mission": "Mission",
   "umi": {
-    "date": "Août 2015 - Aujourd'hui",
+    "date": "Depuis Juillet 2015",
     "company": "United Motion Ideas",
     "job": "Ingénieur conception et développement",
     "desc": "Start-up à Lyon",
     "mission": "Développement du module de recherche"
+  },
+  "umi2": {
+    "date": "Août 2014 - Juin 2015",
+    "company": "United Motion Ideas",
+    "job": "Stage de fin d'études",
+    "desc": "Start-up à Lyon",
+    "mission": "Module de notifications"
+  },
+  "mozilla": {
+    "date": "Juin 2013",
+    "company": "Mozilla Firefox",
+    "job": "Projet de contribution au logiciel libre",
+    "desc": "Description mozilla",
+    "mission": "Correction de bugs et implémentation de nouvelles fonctionnalités liées à la partie media du navigateur"
+  },
+  "stm": {
+    "date": "Juillet 2012 - Août 2012",
+    "company": "ST Microelectronics",
+    "job": "Stage opérateur en salle blanche",
+    "desc": "Description STM",
+    "mission": "Travail en salle blanche sur la speedline: suivi des lots urgents de la production"
+  },
+  "upc": {
+    "date": "2013 - 2014",
+    "company": "FIB (UPC)",
+    "job": "Master in Innovation and Research in Informatics",
+    "desc": "Description UPC",
+    "mission": "Echange universitaire (Erasmus) durant deux semestres"
+  },
+  "imag": {
+    "date": "2012 - 2013",
+    "company": "Grenoble INP Ensimag",
+    "job": "Deuxième année d’école d’ingénieurs",
+    "desc": "Description IMAG",
+    "mission": "Développement logiciel, sécurité des réseaux, systèmes de gestion de base de données"
+  },
+  "phelma": {
+    "date": "2011 - 2012",
+    "company": "Grenoble INP Phelma",
+    "job": "Première année d’école d’ingénieurs",
+    "desc": "Description phelma",
+    "mission": "Tronc commun PET (Physique, Électronique, Télécoms)"
+  },
+  "prepa": {
+    "date": "2009 - 2011",
+    "company": "Lycée Claude Fauriel",
+    "job": "Classe préparatoire Maths - Physique",
+    "desc": "Description Fauriel",
+    "mission": "Maths..."
   }
 }
