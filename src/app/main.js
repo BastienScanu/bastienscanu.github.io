@@ -7,6 +7,7 @@ import Contact from './components/contact';
 import Skills from './components/skills';
 import About from './components/about';
 import {VideoContainer} from './components/videocontainer';
+import ActionButton from './components/actionButton';
 
 export class Main extends Component {
   render() {
@@ -20,6 +21,7 @@ export class Main extends Component {
         <Skills/>
         <Experience/>
         <Contact/>
+        <ActionButton/>
         <MyFooter/>
       </div>
     );
