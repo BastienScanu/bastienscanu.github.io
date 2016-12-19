@@ -3,6 +3,7 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
+import FontAwesome from 'react-fontawesome';
 
 class ActionButton extends Component {
   render() {
@@ -13,7 +14,7 @@ class ActionButton extends Component {
           <label className="tooltip">{t('common:button.linkedin')}</label>
           <a href="https://fr.linkedin.com/in/bastienscanu" target="_blank">
             <FloatingActionButton mini backgroundColor="#0277BD">
-              <FontIcon className="material-icons">send</FontIcon>
+              <FontAwesome name="linkedin-square">send</FontAwesome>
             </FloatingActionButton>
           </a>
         </div>
@@ -47,4 +48,4 @@ ActionButton.propTypes = {
   t: PropTypes.func
 };
 
-export default translate(["common", "button"], {wait: true})(ActionButton);
+export default translate(["common"], {wait: true})(ActionButton);
