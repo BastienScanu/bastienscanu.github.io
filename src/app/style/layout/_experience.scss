@@ -4,5 +4,15 @@
   align-items: center;
   padding: 1rem;
   padding-top: 40px;
-  background-color: $vert;
+  background-color: rgb(230, 230, 230);
+
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .arrows>div {
+    margin: 20px;
+  }
 }
