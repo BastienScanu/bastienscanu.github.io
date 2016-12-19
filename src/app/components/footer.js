@@ -5,9 +5,9 @@ class MyFooter extends Component {
   render() {
     const {t} = this.props;
     return (
-      <div>
+      <footer>
         <p>{t('footer:copyright')}</p>
-      </div>
+      </footer>
     );
   }
 }
