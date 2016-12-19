@@ -2,8 +2,16 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 footer {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: #111;
   text-align: center;
   color: grey;
+  height: 42px;
+
+  p {
+    margin: auto;
+  }
 }
