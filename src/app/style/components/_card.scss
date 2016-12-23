@@ -29,8 +29,47 @@
     }
   }
 
+  .cardMedia {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    height: 350px;
+    img {
+      width: 100%;
+      transition: all 0.3s;
+      position: absolute;
+      top: 0;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+
+      p {
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 0.8em;
+      }
+    }
+  }
+
   .cardDetails {
     padding: 5px 16px;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    transition: height ease 0.3s;
 
     p {
       font-size: 0.7em;
@@ -43,20 +82,19 @@
 
 .jobCard {
   .cardDetails {
-    display: none;
+    height: 0;
   }
-
-  .cardMedia {
-    display: block;
+  .overlay {
+    height: 50px;
   }
 }
 
 .jobCardDetails {
   .cardDetails {
-    display: block;
+    height: auto;
+    transition: height ease 0.3s;
   }
-
-  .cardMedia {
-    display: none;
+  .overlay {
+    height: 100%;
   }
 }

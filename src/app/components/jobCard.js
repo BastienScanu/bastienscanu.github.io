@@ -1,8 +1,7 @@
 import React, {PropTypes} from 'react';
 import {translate} from 'react-i18next';
-import {Card, CardMedia, CardTitle} from 'material-ui/Card';
+import {Card} from 'material-ui/Card';
 import FontIcon from 'material-ui/FontIcon';
-import Divider from 'material-ui/Divider';
 
 const JobCard = React.createClass({
 
@@ -26,7 +25,7 @@ const JobCard = React.createClass({
     const {t} = this.props;
     return (
       <div className={this.dynamicClass()}>
-        <Card>
+        <Card containerStyle={{height: '100%'}} style={{height: '100%'}}>
           <div className="cardHeader" onClick={this.handleCLickMore}>
             <div>
               <h1>{t(`experience:${this.props.name}.company`)}</h1>
@@ -37,16 +36,16 @@ const JobCard = React.createClass({
             </div>
           </div>
           <div className="cardMedia">
-            <CardMedia overlay={<CardTitle title={t(`experience:${this.props.name}.date`)}/>}>
-              <img src={`images/${this.props.name}.png`}/>
-            </CardMedia>
-          </div>
-          <div className="cardDetails">
-            <Divider/>
-            <h1>{t('experience:company')}</h1>
-            <p>{t(`experience:${this.props.name}.desc`)}</p>
-            <h1>{t('experience:mission')}</h1>
-            <p>{t(`experience:${this.props.name}.mission`)}</p>
+            <img src={`images/${this.props.name}.png`} alt={t(`experience:${this.props.name}.company`)}/>
+            <div className="overlay">
+              <p>{t(`experience:${this.props.name}.date`)}</p>
+            </div>
+            <div className="cardDetails">
+              <h1>{t('experience:company')}</h1>
+              <p>{t(`experience:${this.props.name}.desc`)}</p>
+              <h1>{t('experience:mission')}</h1>
+              <p>{t(`experience:${this.props.name}.mission`)}</p>
+            </div>
           </div>
         </Card>
       </div>
