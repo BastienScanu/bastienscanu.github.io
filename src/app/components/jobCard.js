@@ -21,6 +21,19 @@ const JobCard = React.createClass({
     return `jobCard${this.state.seeDetails ? "Details" : ""}`;
   },
 
+  subTitles() {
+    const {t} = this.props;
+    return t(`experience:${this.props.name}.type`) === "work" ?
+    {
+      type: t('experience:company'),
+      mission: t('experience:mission')
+    } :
+    {
+      type: t('experience:school'),
+      mission: t('experience:course')
+    };
+  },
+
   render() {
     const {t} = this.props;
     return (
@@ -32,7 +45,7 @@ const JobCard = React.createClass({
               <h2>{t(`experience:${this.props.name}.job`)}</h2>
             </div>
             <div className="cardHeaderIcon">
-              <FontIcon className="material-icons">more_vert</FontIcon>
+              <FontIcon className="material-icons">{t(`experience:${this.props.name}.type`)}</FontIcon>
             </div>
           </div>
           <div className="cardMedia">
@@ -41,9 +54,9 @@ const JobCard = React.createClass({
               <p>{t(`experience:${this.props.name}.date`)}</p>
             </div>
             <div className="cardDetails">
-              <h1>{t('experience:company')}</h1>
+              <h1>{this.subTitles().type}</h1>
               <p>{t(`experience:${this.props.name}.desc`)}</p>
-              <h1>{t('experience:mission')}</h1>
+              <h1>{this.subTitles().mission}</h1>
               <p>{t(`experience:${this.props.name}.mission`)}</p>
             </div>
           </div>
