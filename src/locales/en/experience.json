@@ -2,61 +2,71 @@
   "title": "Experience",
   "baseline": "What I've done",
   "company": "Company",
+  "school": "School",
+  "course": "Course",
   "mission": "Mission",
   "umi": {
     "date": "Since August 2015",
     "company": "United Motion Ideas",
     "job": "Design & Development Engineer",
-    "desc": "Start-up in Lyon",
-    "mission": "Search engine"
+    "desc": "UMI is a french start-up that helps companies to increase the value of their innovation, by providing the a rapid and clear feedback from the market",
+    "mission": "My job is to develop the search module of professionals, to target and contact experts with specific skills all around the world. I'm working with full autonomy on this module, which is critical for the good functioning of the platform.",
+    "type": "work"
   },
   "umi2": {
     "date": "August 2014 - June 2015",
     "company": "United Motion Ideas",
-    "job": "Stage de fin d'études",
-    "desc": "Start-up à Lyon",
-    "mission": "Notifications module"
+    "job": "Final year internship",
+    "desc": "UMI is a french start-up that helps companies to increase the value of their innovation, by providing the a rapid and clear feedback from the market",
+    "mission": "During this internship, I designed and implemented a real-time notifications module for the UMI platform.",
+    "type": "work"
   },
   "mozilla": {
     "date": "June 2013",
     "company": "Mozilla Firefox",
     "job": "Contribution project to the free software",
-    "desc": "Description mozilla",
-    "mission": "Correction de bugs et implémentation de nouvelles fonctionnalités liées à la partie media du navigateur"
+    "desc": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation, with the help of thousands of volunteers.",
+    "mission": "Within a team of 4 students and under the supervision of a Mozilla Foundation developer, we corrected several bugs and implemented new functionalities related to the media code of the browser.",
+    "type": "work"
   },
   "stm": {
     "date": "July 2012 - August 2012",
     "company": "ST Microelectronics",
-    "job": "Stage opérateur en salle blanche",
-    "desc": "Description STM",
-    "mission": "Travail en salle blanche sur la speedline: suivi des lots urgents de la production"
+    "job": "Cleanroom operator internship",
+    "desc": "STMicroelectronics is a multinational company developing, manufacturing and commercializing semiconductor chips. It is one of the world leaders in semiconductors manufacturing.",
+    "mission": "Working in the cleanroom Crolles 300, on the production chain of 300mm wafers. My job was on the speedline, doing the follow-up of the urgent batches of the production.",
+    "type": "work"
   },
   "upc": {
     "date": "2013 - 2014",
     "company": "Facultat d’Informatica de Barcelona (UPC)",
     "job": "Master in Innovation and Research in Informatics",
-    "desc": "Description UPC",
-    "mission": "Echange universitaire (Erasmus) durant deux semestres"
+    "desc": "The Polytechnic University of Catalonia (BarcelonaTech) is the largest scientific and technical university in Catalonia, Spain. The Informatics Faculty is the department dedicated to computer science.",
+    "mission": "I was in an exchange program during two semesters, following classes of networks, programming (Javascript, Erlang), but also Machine Learning.",
+    "type": "school"
   },
   "imag": {
     "date": "2012 - 2013",
     "company": "Grenoble INP Ensimag",
-    "job": "Deuxième année d’école d’ingénieurs",
-    "desc": "Description IMAG",
-    "mission": "Développement logiciel, sécurité des réseaux, systèmes de gestion de base de données"
+    "job": "Second year of Engineering school",
+    "desc": "The École nationale supérieure d'informatique et mathématiques appliquées, or Grenoble INP - Ensimag, is a prestigious French Grande École part of the Institut polytechnique de Grenoble. The school is one of the top French educational institutions and specializes in Computer science, Applied Mathematics and Telecommunications.",
+    "mission": "I could improve at the ENSIMAG my skills in software programming, network security and database management systems.",
+    "type": "school"
   },
   "phelma": {
     "date": "2011 - 2012",
     "company": "Grenoble INP Phelma",
-    "job": "Première année d’école d’ingénieurs",
-    "desc": "Description phelma",
-    "mission": "Tronc commun PET (Physique, Électronique, Télécoms)"
+    "job": "First year of Engineering school",
+    "desc": "The École Nationale Supérieure de Physique, Électronique et Matériaux (Phelma) is a prestigious French Grande École part of the Institut polytechnique de Grenoble. The school specializes in physics, electronics and materials.",
+    "mission": "My core curriculum was PET (Physics, Electronics, Telecoms), I followed classes about electronics, C programming and signal treatment.",
+    "type": "school"
   },
   "prepa": {
     "date": "2009 - 2011",
-    "company": "Lycée Claude Fauriel - Saint-Étienne",
-    "job": "Classe préparatoire Maths - Physique",
-    "desc": "Description Fauriel",
-    "mission": "Maths..."
+    "company": "Lycée Claude Fauriel",
+    "job": "Preparatory classes, Maths/Physics",
+    "desc": "The Claude Fauriel highschool is a public highschool in Saint-Etienne, that also offers Higher School Preparatory Classes.",
+    "mission": "Higher School Preparatory Classes are part of the French post-secondary education system. They consist of two very intensive years which act as a preparatory course with the main goal of training students for enrollment in one of the Grandes Écoles.",
+    "type": "school"
   }
 }
