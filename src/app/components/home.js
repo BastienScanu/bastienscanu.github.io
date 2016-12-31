@@ -7,8 +7,8 @@ class Home extends Component {
     return (
       <section id="home">
         <div className="container">
-          <h1>{t('home:title')}</h1>
-          <h2>{t('home:baseline')}</h2>
+          <h1>Bastien Scanu</h1>
+          <h2>{t('home:job')}</h2>
         </div>
       </section>
     );

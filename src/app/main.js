@@ -6,7 +6,6 @@ import Experience from './components/experience';
 import Contact from './components/contact';
 import Skills from './components/skills';
 import About from './components/about';
-import {VideoContainer} from './components/videocontainer';
 import ActionButton from './components/actionButton';
 
 export class Main extends Component {
@@ -14,9 +13,7 @@ export class Main extends Component {
     return (
       <div>
         <Header/>
-        <VideoContainer mp4="https://s3-us-west-2.amazonaws.com/coverr/mp4/Aloha-Mundo.mp4" webm="https://s3-us-west-2.amazonaws.com/coverr/webm/Aloha-Mundo.webm">
-          <Home/>
-        </VideoContainer>
+        <Home/>
         <About/>
         <Skills/>
         <Experience/>

@@ -13,6 +13,22 @@ const Header = React.createClass({
     };
   },
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+
+  handleScroll() {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+      document.getElementById("header").className = `${this.dynamicClass()} green`;
+    } else {
+      document.getElementById("header").className = this.dynamicClass();
+    }
+  },
+
   handleClickEn() {
     i18n.changeLanguage("en");
   },
@@ -34,12 +50,13 @@ const Header = React.createClass({
   render() {
     const {t} = this.props;
     return (
-      <header className={this.dynamicClass()}>
+      <header id="header" className={this.dynamicClass()}>
         <div className="container">
           <div className="showMenu">
             <FontIcon onClick={this.handleClickMenu} className="material-icons" color={lightGreen50}>menu</FontIcon>
           </div>
           <Logo size={32} big/>
+          <Logo size={32} big white/>
           <Scrollspy items={['home', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
             <li><a href="#home">{t('header:home')}</a></li>
             <li><a href="#skills">{t('header:skills')}</a></li>
