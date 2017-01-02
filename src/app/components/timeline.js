@@ -5,8 +5,15 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 
 const Timeline = React.createClass({
   getInitialState() {
+    let slidesToShow = 1;
+    if (window.matchMedia("(min-width: 62em)").matches) {
+      slidesToShow = 3;
+    } else if (window.matchMedia("(min-width: 48em)").matches && window.matchMedia("(max-width: 62em)").matches) {
+      slidesToShow = 2;
+    }
     return {
-      currentSlide: 0
+      currentSlide: 0,
+      slidesToShow
     };
   },
 
@@ -23,7 +30,7 @@ const Timeline = React.createClass({
   },
 
   disableClickRight() {
-    return this.state.currentSlide >= this.props.cards.length - this.props.slidesToShow;
+    return this.state.currentSlide >= this.props.cards.length - this.state.slidesToShow;
   },
 
   render() {
@@ -32,9 +39,9 @@ const Timeline = React.createClass({
       <div>
         <div className="row">
           {this.props.cards.map((card, index) => {
-            if (index < self.state.currentSlide + self.props.slidesToShow && index >= self.state.currentSlide) {
+            if (index < self.state.currentSlide + self.state.slidesToShow && index >= self.state.currentSlide) {
               return (
-                <div key={card} className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div key={card} className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                   <JobCard name={card}/>
                 </div>
               );
@@ -58,8 +65,7 @@ const Timeline = React.createClass({
 
   propTypes: {
     t: PropTypes.func,
-    cards: PropTypes.arrayOf(React.PropTypes.string),
-    slidesToShow: PropTypes.number
+    cards: PropTypes.arrayOf(React.PropTypes.string)
   }
 });
 
