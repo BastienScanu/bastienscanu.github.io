@@ -18,7 +18,7 @@ export class Logo extends Component {
       }
     }
 
-    const className = this.props.white ? "logoWhite" : "logoBlack";
+    const className = this.props.big ? (this.props.white ? "logoWhite" : "logoBlack") : "";
 
     return (
       <a href="http://www.bastien-scanu.com" className={className}>
