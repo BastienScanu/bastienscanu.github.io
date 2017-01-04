@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .jobCard, .jobCardDetails {
+  max-width: 350px;
 
   h1 {
     font-size: 1em;
@@ -33,9 +34,11 @@
     overflow: hidden;
     padding: 0;
     position: relative;
-    height: 350px;
+    height: 342px;
+    max-width: 350px;
     img {
       width: 100%;
+      height: 100%;
       transition: all 0.3s;
       position: absolute;
       top: 0;
