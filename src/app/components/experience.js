@@ -10,7 +10,35 @@ class Experience extends Component {
       <section id="experience">
         <div className="container">
           <h1>{t('experience:title')}</h1>
-          <TimeLine cards={["umi", "umi2", "upc", "mozilla", "imag", "stm", "phelma", "prepa"]}/>
+          <TimeLine
+            cards={[
+              {
+                name: "umi",
+                type: "job"
+              }, {
+                name: "umi2",
+                type: "job"
+              }, {
+                name: "upc",
+                type: "school"
+              }, {
+                name: "mozilla",
+                type: "job"
+              }, {
+                name: "imag",
+                type: "school"
+              }, {
+                name: "stm",
+                type: "job"
+              }, {
+                name: "phelma",
+                type: "school"
+              }, {
+                name: "prepa",
+                type: "school"
+              }
+            ]}
+            />
         </div>
       </section>
     );

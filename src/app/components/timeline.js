@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import FontIcon from 'material-ui/FontIcon';
 import JobCard from './jobCard';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
+import Toggle from 'material-ui/Toggle';
 
 const Timeline = React.createClass({
   getInitialState() {
@@ -13,36 +14,68 @@ const Timeline = React.createClass({
     }
     return {
       currentSlide: 0,
-      slidesToShow
+      slidesToShow,
+      school: true,
+      job: true
     };
   },
 
   handleClickLeft() {
-    this.setState({currentSlide: (this.state.currentSlide - 1) % this.props.cards.length});
+    this.setState({currentSlide: (this.state.currentSlide - 1)});
   },
 
   handleClickRight() {
-    this.setState({currentSlide: (this.state.currentSlide + 1) % this.props.cards.length});
+    this.setState({currentSlide: (this.state.currentSlide + 1)});
   },
 
-  disableClickLeft() {
-    return this.state.currentSlide === 0;
+  disableClickLeft(cards) {
+    return this.state.currentSlide === 0 || cards.length === 0;
   },
 
-  disableClickRight() {
-    return this.state.currentSlide >= this.props.cards.length - this.state.slidesToShow;
+  disableClickRight(cards) {
+    return this.state.currentSlide >= cards.length - this.state.slidesToShow;
+  },
+
+  handleChangeSchool() {
+    this.setState({currentSlide: 0});
+    this.setState({school: !this.state.school});
+  },
+
+  handleChangeJob() {
+    this.setState({currentSlide: 0});
+    this.setState({job: !this.state.job});
   },
 
   render() {
+    const cards = [];
+    this.props.cards.forEach(card => {
+      if (this.state[card.type]) {
+        cards.push(card);
+      }
+    });
     const self = this;
     return (
       <div>
         <div className="row">
-          {this.props.cards.map((card, index) => {
+          <Toggle
+            label="School"
+            toggled={this.state.school}
+            labelPosition="right"
+            onToggle={this.handleChangeSchool}
+            />
+          <Toggle
+            label="Job"
+            toggled={this.state.job}
+            labelPosition="right"
+            onToggle={this.handleChangeJob}
+            />
+        </div>
+        <div className="row">
+          {cards.map((card, index) => {
             if (index < self.state.currentSlide + self.state.slidesToShow && index >= self.state.currentSlide) {
               return (
-                <div key={card} className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                  <JobCard name={card}/>
+                <div key={card.name} className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                  <JobCard name={card.name}/>
                 </div>
               );
             }
@@ -51,10 +84,10 @@ const Timeline = React.createClass({
           }
         </div>
         <div className="row arrows">
-          <FloatingActionButton onClick={this.handleClickLeft} disabled={this.disableClickLeft()}>
+          <FloatingActionButton onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
             <FontIcon className="material-icons">keyboard_arrow_left</FontIcon>
           </FloatingActionButton>
-          <FloatingActionButton onClick={this.handleClickRight} disabled={this.disableClickRight()}>
+          <FloatingActionButton onClick={this.handleClickRight} disabled={this.disableClickRight(cards)}>
             <FontIcon className="material-icons">keyboard_arrow_right</FontIcon>
           </FloatingActionButton>
         </div>
@@ -65,7 +98,7 @@ const Timeline = React.createClass({
 
   propTypes: {
     t: PropTypes.func,
-    cards: PropTypes.arrayOf(React.PropTypes.string)
+    cards: PropTypes.arrayOf(React.PropTypes.object)
   }
 });
 
