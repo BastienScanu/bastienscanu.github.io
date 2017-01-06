@@ -46,6 +46,10 @@ const Timeline = React.createClass({
     this.setState({job: !this.state.job});
   },
 
+  handleGoToCard(event) {
+    this.setState({currentSlide: parseInt(event.target.innerText, 10)});
+  },
+
   render() {
     const cards = [];
     this.props.cards.forEach(card => {
@@ -58,7 +62,7 @@ const Timeline = React.createClass({
       <div>
         <div className="timelineSettings">
           <div className="buttons">
-            <div className="toggle">
+            <div>
               <Toggle
                 label={<FontIcon className="material-icons">school</FontIcon>}
                 toggled={this.state.school}
@@ -66,7 +70,7 @@ const Timeline = React.createClass({
                 onToggle={this.handleChangeSchool}
                 />
             </div>
-            <div className="toggle">
+            <div>
               <Toggle
                 label={<FontIcon className="material-icons">work</FontIcon>}
                 toggled={this.state.job}
@@ -88,6 +92,21 @@ const Timeline = React.createClass({
             return null;
           })
           }
+        </div>
+        <div className="timelineCircles">
+          <ul>
+            {cards.map((card, index) => {
+              if (index === self.state.currentSlide) {
+                return (
+                  <li key={index} className="selectedDot" onClick={this.handleGoToCard}><span>{index}</span></li>
+                );
+              }
+              return (
+                <li key={index} onClick={this.handleGoToCard}><span>{index}</span></li>
+              );
+            })
+            }
+          </ul>
         </div>
         <div className="row arrows">
           <FloatingActionButton onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
