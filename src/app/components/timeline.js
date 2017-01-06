@@ -56,19 +56,25 @@ const Timeline = React.createClass({
     const self = this;
     return (
       <div>
-        <div className="row">
-          <Toggle
-            label="School"
-            toggled={this.state.school}
-            labelPosition="right"
-            onToggle={this.handleChangeSchool}
-            />
-          <Toggle
-            label="Job"
-            toggled={this.state.job}
-            labelPosition="right"
-            onToggle={this.handleChangeJob}
-            />
+        <div className="timelineSettings">
+          <div className="buttons">
+            <div className="toggle">
+              <Toggle
+                label={<FontIcon className="material-icons">school</FontIcon>}
+                toggled={this.state.school}
+                labelPosition="right"
+                onToggle={this.handleChangeSchool}
+                />
+            </div>
+            <div className="toggle">
+              <Toggle
+                label={<FontIcon className="material-icons">work</FontIcon>}
+                toggled={this.state.job}
+                labelPosition="right"
+                onToggle={this.handleChangeJob}
+                />
+            </div>
+          </div>
         </div>
         <div className="row">
           {cards.map((card, index) => {
