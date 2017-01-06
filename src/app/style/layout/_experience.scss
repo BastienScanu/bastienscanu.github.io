@@ -16,4 +16,21 @@
   .arrows>div {
     margin: 20px;
   }
+
+  .timelineSettings {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 5px;
+      border-radius: 25px;
+    }
+
+    .toggle {
+    }
+  }
 }
