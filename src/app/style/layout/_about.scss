@@ -21,6 +21,11 @@
     background-size: contain;
   }
 
+  #profilePic:hover {
+    background: url("../../images/profilePic2.png") no-repeat center;
+    background-size: contain;
+  }
+
   #profileLogoCol {
     background: url('../../images/logo.svg') no-repeat;
     background-size: contain;
