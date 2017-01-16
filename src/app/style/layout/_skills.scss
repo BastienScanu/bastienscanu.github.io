@@ -6,6 +6,25 @@
   padding-top: 40px;
   background-color: white;
 
+  .topSkill {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #pictoDev {
+    background: url('../../images/dev.png') no-repeat center;
+    width: 100%;
+    min-height: 200px;
+    background-size: contain;
+    transition: all 0.3s;
+  }
+
+  #pictoDev:hover {
+    background: url('../../images/devhover.png') no-repeat center;
+    background-size: contain;
+  }
+
   #technos {
     display: flex;
     flex-direction: row;

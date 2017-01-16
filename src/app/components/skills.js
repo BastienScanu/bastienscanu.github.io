@@ -79,6 +79,50 @@ class Skills extends Component {
       <section id="skills">
         <div className="container">
           <h1>{t('skills:title')}</h1>
+          <div className="row">
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="topSkill">
+                <div id="pictoDev"></div>
+                <h5>{t('skills:topSkills.dev.title')}</h5>
+                <p>{t('skills:topSkills.dev.text')}</p>
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="topSkill">
+                <div id="pictoWeb"></div>
+                <h5>{t('skills:topSkills.web.title')}</h5>
+                <p>{t('skills:topSkills.web.text')}</p>
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="topSkill">
+                <div id="pictoAgile"></div>
+                <h5>{t('skills:topSkills.agile.title')}</h5>
+                <p>{t('skills:topSkills.agile.text')}</p>
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="topSkill">
+                <div id="pictoCurious"></div>
+                <h5>{t('skills:topSkills.curious.title')}</h5>
+                <p>{t('skills:topSkills.curious.text')}</p>
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="topSkill">
+                <div id="pictoCom"></div>
+                <h5>{t('skills:topSkills.com.title')}</h5>
+                <p>{t('skills:topSkills.com.text')}</p>
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="topSkill">
+                <div id="pictoPassion"></div>
+                <h5>{t('skills:topSkills.passion.title')}</h5>
+                <p>{t('skills:topSkills.passion.text')}</p>
+              </div>
+            </div>
+          </div>
           <div id="technos">
             {technos.map(tech => {
               return <Techno avatar={tech.avatar} key={tech.key} text={tech.key}/>;

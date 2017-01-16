@@ -1,5 +1,31 @@
 {
   "title": "Skills",
+  "topSkills": {
+    "dev": {
+      "title": "Developer",
+      "text": "I'm a great dev !"
+      },
+      "web": {
+        "title": "Web Addict",
+        "text": "I know everything about the web !"
+      },
+      "agile": {
+        "title": "Agile",
+        "text": "I'm a fucking ninja !"
+      },
+      "curious": {
+        "title": "Curious",
+        "text": "I'm very curious !"
+      },
+      "com": {
+        "title": "Communication",
+        "text": "I speak lots of languages !"
+      },
+      "passion": {
+        "title": "Passionate",
+        "text": "I have lots of cool passions !"
+      }
+  },
   "technos": {
     "angular": "AngularJS",
     "react": "React",
