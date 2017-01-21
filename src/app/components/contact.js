@@ -15,19 +15,25 @@ class Contact extends Component {
             <div id="smartphoneScreen">
               <div className="row">
                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                  <FontIcon className="material-icons" color={green500} hoverColor={green300}>phone</FontIcon>
+                  <a href="tel:33618521891" target="_blank">
+                    <FontIcon className="material-icons" color={green500} hoverColor={green300}>phone</FontIcon>
+                  </a>
                 </div>
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                  <p>+33 6 18 52 18 91</p>
+                  <h5><a href="tel:33618521891" target="_blank">+33 6 18 52 18 91</a></h5>
+                  <h6>{t('contact:mobile')}</h6>
                   <Divider/>
                 </div>
               </div>
               <div className="row">
                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                  <FontIcon className="material-icons" color={green500} hoverColor={green300}>mail</FontIcon>
+                  <a href="mailto:bastien-scanu@gmail.com" target="_blank">
+                    <FontIcon className="material-icons" color={green500} hoverColor={green300}>mail</FontIcon>
+                  </a>
                 </div>
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                  <p>bastien.scanu@gmail.com</p>
+                  <h5><a href="mailto:bastien-scanu@gmail.com" target="_blank">bastien.scanu@gmail.com</a></h5>
+                  <h6>{t('contact:personal')}</h6>
                   <Divider/>
                 </div>
               </div>
@@ -36,7 +42,8 @@ class Contact extends Component {
                   <FontIcon className="material-icons" color={green500} hoverColor={green300}>place</FontIcon>
                 </div>
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                  <p>Lyon, France</p>
+                  <h5>Lyon, France</h5>
+                  <h6>{t('contact:home')}</h6>
                   <Divider/>
                 </div>
               </div>
