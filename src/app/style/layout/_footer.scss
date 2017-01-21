@@ -54,7 +54,7 @@ footer {
 {
 	position: absolute;
 	width: 18em;
-	height: 50em;
+	height: 30em;
 	bottom: 0;
 	left: 50%;
 	margin-left: -9em;
@@ -73,7 +73,7 @@ footer {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+	background: linear-gradient(rgba(0,0,0,1) 50%, rgba(0,0,0,0));
 	pointer-events: none;
 	z-index: 10;
 }
