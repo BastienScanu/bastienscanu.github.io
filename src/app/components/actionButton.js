@@ -14,7 +14,7 @@ class ActionButton extends Component {
           <label className="tooltip">{t('common:button.linkedin')}</label>
           <a href="https://fr.linkedin.com/in/bastienscanu" target="_blank">
             <FloatingActionButton mini backgroundColor="#0277BD">
-              <FontAwesome name="linkedin-square">send</FontAwesome>
+              <FontAwesome name="linkedin-square"/>
             </FloatingActionButton>
           </a>
         </div>
