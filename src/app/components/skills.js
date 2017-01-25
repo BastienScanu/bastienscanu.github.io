@@ -78,7 +78,6 @@ class Skills extends Component {
     return (
       <section id="skills">
         <div className="container">
-          <h1>{t('skills:title')}</h1>
           <div className="row">
             <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
               <div className="topSkill">
@@ -117,9 +116,9 @@ class Skills extends Component {
             </div>
             <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
               <div className="topSkill">
-                <div id="pictoPassion"></div>
-                <h5>{t('skills:topSkills.passion.title')}</h5>
-                <p>{t('skills:topSkills.passion.text')}</p>
+                <div id="pictoDynamic"></div>
+                <h5>{t('skills:topSkills.dynamic.title')}</h5>
+                <p>{t('skills:topSkills.dynamic.text')}</p>
               </div>
             </div>
           </div>

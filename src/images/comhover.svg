@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>comhover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="512.5" cy="512.5" r="439.5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="879" height="879" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="879" height="879" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M159.584638,302.018881 C66.8079887,281.342158 -2.84217094e-14,223.355973 -2.84217094e-14,155.055503 C-2.84217094e-14,69.4207135 105.022292,0 234.573854,0 C364.125417,0 469.147709,69.4207135 469.147709,155.055503 C469.147709,240.690293 364.125417,310.111007 234.573854,310.111007 C226.435667,310.111007 218.394275,309.837064 210.469631,309.302369 L159.584639,361.065972 L159.584639,302.018886 Z" id="path-5"></path>
+        <text id="text-7" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="360" font-weight="bold" letter-spacing="-4.25" fill="#DAEEFF">
+            <tspan x="48.3976528" y="194.328179">..</tspan>
+            <tspan x="265.249215" y="194.328179" letter-spacing="-4.78125">.</tspan>
+        </text>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.302819293 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="3" dy="8" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0837862319 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="3" dy="8" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0837862319 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <text id="text-11" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="430" font-weight="bold" letter-spacing="-5.07638884" fill="#3C9BC6">
+            <tspan x="402.569" y="407">!</tspan>
+        </text>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0795969203 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="3" dy="8" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0837862319 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="3" dy="8" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0837862319 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icônes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="comhover">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Oval" stroke="#F0DB00" mask="url(#mask-2)" stroke-width="84">
+                <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group" mask="url(#mask-3)">
+                <g transform="translate(114.000000, 174.000000)">
+                    <g id="Group-Copy" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 248.897050)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#3C9BC7" xlink:href="#path-5"></use>
+                        <path d="M190.17416,307.337303 C81.8528066,293.620039 4.0075443e-15,230.656215 1.25055521e-12,155.055503 C1.60284061e-12,134.070217 105.022292,223.782653 234.573854,223.782653 C364.125417,223.782653 469.147709,141.828103 469.147709,155.055503 C469.147709,240.690293 364.125417,310.111007 234.573854,310.111007 C226.435667,310.111007 218.394275,309.837064 210.469632,309.302368 L159.584639,361.065972 L190.17416,307.337303 Z" id="Combined-Shape-Copy-3" fill="#348AB2" mask="url(#mask-6)"></path>
+                        <g id="..." mask="url(#mask-6)" fill-opacity="1" fill="#DAEEFF">
+                            <use filter="url(#filter-8)" xlink:href="#text-7"></use>
+                            <use filter="url(#filter-9)" xlink:href="#text-7"></use>
+                            <use filter="url(#filter-10)" xlink:href="#text-7"></use>
+                        </g>
+                        <ellipse id="Combined-Shape-Copy" fill-opacity="0.18" fill="#000000" mask="url(#mask-6)" transform="translate(459.157848, 51.262466) scale(-1, 1) translate(-459.157848, -51.262466) " cx="459.157848" cy="51.2624661" rx="321.574008" ry="212.563416"></ellipse>
+                    </g>
+                    <path d="M366.272135,460.683925 C239.085927,432.338495 147.499792,352.846047 147.499792,259.213891 C147.499792,141.818358 291.473379,46.6504749 469.0738,46.6504749 C646.674221,46.6504749 790.647809,141.818358 790.647809,259.213891 C790.647809,376.609424 646.674221,471.777307 469.0738,471.777307 C457.917273,471.777307 446.893441,471.401763 436.029659,470.668756 L366.272136,541.630754 L366.272136,460.683932 Z" id="Combined-Shape-Copy-6" fill="#DAEEFF" fill-rule="evenodd" transform="translate(469.073800, 294.140615) scale(-1, 1) translate(-469.073800, -294.140615) "></path>
+                    <path d="M366.353334,460.815665 C237.462418,432.582748 142.625856,352.978054 147.58099,259.213891 C148.828943,235.599336 293.334511,356.844609 470.934932,356.844609 C648.535353,356.844609 789.692441,232.80506 790.729007,259.213891 C795.336341,376.596019 646.755419,471.777307 469.154999,471.777307 C442.566547,471.777307 416.592744,469.643882 391.666291,465.621974 L366.353334,541.630754 L366.353334,460.815665 Z" id="Combined-Shape-Copy-5" fill-opacity="0.76" fill="#CEE2F2" fill-rule="evenodd" transform="translate(469.114399, 398.577816) scale(-1, 1) translate(-469.114399, -398.577816) "></path>
+                    <g id="!" fill="none" fill-opacity="1">
+                        <use fill="#3C9BC6" filter="url(#filter-12)" xlink:href="#text-11"></use>
+                        <use fill="#3C9BC6" filter="url(#filter-13)" xlink:href="#text-11"></use>
+                        <use fill="#3C9BC6" filter="url(#filter-14)" xlink:href="#text-11"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

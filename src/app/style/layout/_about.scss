@@ -16,8 +16,10 @@
   }
 
   #profilePic {
-    min-height: 200px;
-    background: url("../../images/profilePic2.png") no-repeat center;
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    background: url("../../images/profilePic.svg") no-repeat center;
     background-size: contain;
     transition: all ease 0.2s;
   }

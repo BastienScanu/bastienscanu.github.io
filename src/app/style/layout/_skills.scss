@@ -10,18 +10,76 @@
     margin: 10px;
     padding: 5px;
     text-align: center;
+
+    h5 {
+      margin: 0;
+    }
+  }
+
+  .topSkill>div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transition: all 0.2s;
   }
 
   #pictoDev {
-    background: url('../../images/dev.png') no-repeat center;
-    width: 100%;
-    min-height: 200px;
+    background: url('../../images/dev.svg') no-repeat center;
     background-size: contain;
-    transition: all 0.3s;
   }
 
   #pictoDev:hover {
-    background: url('../../images/devhover.png') no-repeat center;
+    background: url('../../images/devhover.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoWeb {
+    background: url('../../images/web.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoWeb:hover {
+    background: url('../../images/webhover.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoAgile {
+    background: url('../../images/agile.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoAgile:hover {
+    background: url('../../images/agilehover.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoCurious {
+    background: url('../../images/curious.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoCurious:hover {
+    background: url('../../images/curioushover.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoCom {
+    background: url('../../images/com.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoCom:hover {
+    background: url('../../images/comhover.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoDynamic {
+    background: url('../../images/dynamic.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  #pictoDynamic:hover {
+    background: url('../../images/dynamichover.svg') no-repeat center;
     background-size: contain;
   }
 
