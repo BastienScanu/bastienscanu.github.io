@@ -4,86 +4,78 @@
     <title>curious</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <circle id="path-1" cx="512.5" cy="512.5" r="439.5"></circle>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+        <linearGradient x1="14.6446609%" y1="14.6446609%" x2="85.3553391%" y2="85.3553391%" id="linearGradient-1">
             <stop stop-color="#000000" offset="0%"></stop>
             <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
-        <rect id="path-4" x="116.716335" y="25.8357398" width="29.0681076" height="100.113492"></rect>
-        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="29.0681076" height="100.113492" fill="white">
+        <rect id="path-2" x="116.716335" y="25.8357398" width="29.0681076" height="100.113492"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="29.0681076" height="100.113492" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <rect id="path-4" x="0.44390475" y="41.9830772" width="29.0681076" height="67.818817"></rect>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="29.0681076" height="67.818817" fill="white">
             <use xlink:href="#path-4"></use>
         </mask>
-        <rect id="path-6" x="0.44390475" y="41.9830772" width="29.0681076" height="67.818817"></rect>
-        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="29.0681076" height="67.818817" fill="white">
+        <rect id="path-6" x="286.280296" y="10.4241825" width="38.7574768" height="131.25192"></rect>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="38.7574768" height="131.25192" fill="white">
             <use xlink:href="#path-6"></use>
         </mask>
-        <rect id="path-8" x="286.280296" y="10.4241825" width="38.7574768" height="131.25192"></rect>
-        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="38.7574768" height="131.25192" fill="white">
+        <rect id="path-8" x="454.229362" y="0.807366869" width="38.7574768" height="152.243459"></rect>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="38.7574768" height="152.243459" fill="white">
             <use xlink:href="#path-8"></use>
-        </mask>
-        <rect id="path-10" x="454.229362" y="0.807366869" width="38.7574768" height="152.243459"></rect>
-        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="38.7574768" height="152.243459" fill="white">
-            <use xlink:href="#path-10"></use>
         </mask>
     </defs>
     <g id="Icônes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="curious">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <use id="Oval" fill="#0E5186" xlink:href="#path-1"></use>
-            <path d="M919.194086,387.047575 L919.194086,807.237455 L330.272941,899.043913 L330.272941,541.147882 L420.89893,493.401883 L420.89893,300.228457 L566.717718,334.019575 C566.717718,334.019575 765.2692,397.384476 859.841527,411.612327 C882.761323,415.060476 919.194086,387.047575 919.194086,387.047575 Z" id="ombre" fill-opacity="0.33" fill="url(#linearGradient-3)" mask="url(#mask-2)" transform="translate(624.733513, 599.636185) rotate(-45.000000) translate(-624.733513, -599.636185) "></path>
-            <g id="téléscope" mask="url(#mask-2)">
-                <g transform="translate(228.000000, 241.000000)">
-                    <g>
-                        <g id="pied" transform="translate(146.000000, 180.000000)">
-                            <path d="M0.7943118,344.454987 C-5.40359783,341.187469 93.1063518,54.2245369 97.0814861,43.3099352 C101.05662,32.3953335 117.58358,36.1588856 113.527814,49.7317553 C109.472047,63.304625 6.99222143,347.722506 0.7943118,344.454987 Z" id="Path-7" fill="#5C5C5C"></path>
-                            <path d="M264.955231,324.277465 C257.945833,325.757868 104.772203,58.4460947 99.110501,48.1378006 C93.4487994,37.8295064 108.275554,30.3216475 115.954599,42.5919774 C123.633644,54.8623074 271.964628,322.797061 264.955231,324.277465" id="Path-7-Copy" fill="#676767"></path>
-                            <path d="M104.066703,359.198738 C97.0659352,357.686349 96.9780443,57.6354848 97.1930448,46.163689 C97.4080452,34.6918931 114.449525,33.9915941 115.030898,48.0264803 C115.612271,62.0613665 111.06747,360.711128 104.066703,359.198738" id="Path-7-Copy-2" fill="#757575"></path>
-                            <circle id="Oval-4" fill="#989898" transform="translate(105.348938, 36.319324) rotate(-22.000000) translate(-105.348938, -36.319324) " cx="105.348938" cy="36.3193242" r="27.5"></circle>
-                        </g>
-                        <g id="lunette" transform="translate(256.990743, 167.194097) rotate(-23.000000) translate(-256.990743, -167.194097) translate(10.490743, 90.194097)">
-                            <rect id="Rectangle-4" fill="#D8D8D8" x="0.44390475" y="48.4420122" width="127.576694" height="54.9009471"></rect>
-                            <path d="M0.0313408136,75.8924857 C0.0313408136,75.8924857 97.8656401,75.8924857 105.083003,75.8924857 C112.300365,75.8924857 112.809481,48.2921056 116.716335,48.2921056 C116.716335,50.898663 116.716335,103.342959 116.716335,103.342959 L0.0313408136,103.342959 L0.0313408136,75.8924857 Z" id="Rectangle-4-Copy" fill-opacity="0.065698596" fill="#000000"></path>
-                            <rect id="Rectangle-4-Copy-3" fill="#D8D8D8" x="116.65686" y="32.3941686" width="169.668082" height="87.0845111"></rect>
-                            <path d="M116.65686,75.9364242 C116.65686,75.9364242 266.614131,75.9364242 272.779077,75.9364242 C278.944023,75.9364242 282.987775,32.1563852 286.324942,32.1563852 C286.324942,36.2909363 286.324942,119.47868 286.324942,119.47868 L116.65686,119.47868 L116.65686,75.9364242 Z" id="Rectangle-4-Copy-2" fill-opacity="0.065698596" fill="#000000"></path>
-                            <use id="Rectangle" stroke="#FFCC76" mask="url(#mask-5)" stroke-width="2" fill="#F1A411" xlink:href="#path-4"></use>
-                            <use id="Rectangle-Copy-3" stroke="#FFCC76" mask="url(#mask-7)" stroke-width="2" fill="#F1A411" xlink:href="#path-6"></use>
-                            <rect id="Rectangle-4-Copy-5" fill="#D8D8D8" x="286.280296" y="19.5142458" width="169.668082" height="114.170519"></rect>
-                            <path d="M286.280296,76.9112468 C286.280296,76.9112468 433.234634,76.9112468 439.399581,76.9112468 C445.564527,76.9112468 452.611211,19.5142458 455.948378,19.5142458 C455.948378,24.9347717 455.948378,133.996506 455.948378,133.996506 L286.280296,133.996506 L286.280296,76.9112468 Z" id="Rectangle-4-Copy-4" fill-opacity="0.065698596" fill="#000000"></path>
-                            <use id="Rectangle-Copy" stroke="#FFCC76" mask="url(#mask-9)" stroke-width="2" fill="#F1A411" xlink:href="#path-8"></use>
-                            <use id="Rectangle-Copy-2" stroke="#FFCC76" mask="url(#mask-11)" stroke-width="2" fill="#F1A411" xlink:href="#path-10"></use>
-                        </g>
+            <circle id="Oval" fill="#0E5186" cx="512.5" cy="512.5" r="439.5"></circle>
+            <path d="M951.995401,510.467938 L682.625733,241.098269 C682.625733,241.098269 676.671991,286.668235 658.027039,300.436769 C581.093695,357.248893 395.890845,452.840241 395.890845,452.840241 L268.887462,532.055766 L405.481702,668.650006 L375.16097,766.493777 L558.308639,949.641446 C613.454,943.930342 665.571892,928.022667 712.744525,903.836211 L946.184923,584.172908 C950.010534,560.848817 952,536.906741 952,512.5 C952,511.822287 951.998466,511.144932 951.995401,510.467938 Z" id="Combined-Shape" fill-opacity="0.33" fill="url(#linearGradient-1)"></path>
+            <g id="téléscope" transform="translate(228.000000, 241.000000)">
+                <g>
+                    <g id="pied" transform="translate(146.000000, 180.000000)">
+                        <path d="M0.7943118,344.454987 C-5.40359783,341.187469 93.1063518,54.2245369 97.0814861,43.3099352 C101.05662,32.3953335 117.58358,36.1588856 113.527814,49.7317553 C109.472047,63.304625 6.99222143,347.722506 0.7943118,344.454987 Z" id="Path-7" fill="#5C5C5C"></path>
+                        <path d="M264.955231,324.277465 C257.945833,325.757868 104.772203,58.4460947 99.110501,48.1378006 C93.4487994,37.8295064 108.275554,30.3216475 115.954599,42.5919774 C123.633644,54.8623074 271.964628,322.797061 264.955231,324.277465" id="Path-7-Copy" fill="#676767"></path>
+                        <path d="M104.066703,359.198738 C97.0659352,357.686349 96.9780443,57.6354848 97.1930448,46.163689 C97.4080452,34.6918931 114.449525,33.9915941 115.030898,48.0264803 C115.612271,62.0613665 111.06747,360.711128 104.066703,359.198738" id="Path-7-Copy-2" fill="#757575"></path>
+                        <circle id="Oval-4" fill="#989898" transform="translate(105.348938, 36.319324) rotate(-22.000000) translate(-105.348938, -36.319324) " cx="105.348938" cy="36.3193242" r="27.5"></circle>
+                    </g>
+                    <g id="lunette" transform="translate(256.990743, 167.194097) rotate(-23.000000) translate(-256.990743, -167.194097) translate(10.490743, 90.194097)">
+                        <rect id="Rectangle-4" fill="#D8D8D8" x="0.44390475" y="48.4420122" width="127.576694" height="54.9009471"></rect>
+                        <path d="M0.0313408136,75.8924857 C0.0313408136,75.8924857 97.8656401,75.8924857 105.083003,75.8924857 C112.300365,75.8924857 112.809481,48.2921056 116.716335,48.2921056 C116.716335,50.898663 116.716335,103.342959 116.716335,103.342959 L0.0313408136,103.342959 L0.0313408136,75.8924857 Z" id="Rectangle-4-Copy" fill-opacity="0.065698596" fill="#000000"></path>
+                        <rect id="Rectangle-4-Copy-3" fill="#D8D8D8" x="116.65686" y="32.3941686" width="169.668082" height="87.0845111"></rect>
+                        <path d="M116.65686,75.9364242 C116.65686,75.9364242 266.614131,75.9364242 272.779077,75.9364242 C278.944023,75.9364242 282.987775,32.1563852 286.324942,32.1563852 C286.324942,36.2909363 286.324942,119.47868 286.324942,119.47868 L116.65686,119.47868 L116.65686,75.9364242 Z" id="Rectangle-4-Copy-2" fill-opacity="0.065698596" fill="#000000"></path>
+                        <use id="Rectangle" stroke="#FFCC76" mask="url(#mask-3)" stroke-width="2" fill="#F1A411" xlink:href="#path-2"></use>
+                        <use id="Rectangle-Copy-3" stroke="#FFCC76" mask="url(#mask-5)" stroke-width="2" fill="#F1A411" xlink:href="#path-4"></use>
+                        <rect id="Rectangle-4-Copy-5" fill="#D8D8D8" x="286.280296" y="19.5142458" width="169.668082" height="114.170519"></rect>
+                        <path d="M286.280296,76.9112468 C286.280296,76.9112468 433.234634,76.9112468 439.399581,76.9112468 C445.564527,76.9112468 452.611211,19.5142458 455.948378,19.5142458 C455.948378,24.9347717 455.948378,133.996506 455.948378,133.996506 L286.280296,133.996506 L286.280296,76.9112468 Z" id="Rectangle-4-Copy-4" fill-opacity="0.065698596" fill="#000000"></path>
+                        <use id="Rectangle-Copy" stroke="#FFCC76" mask="url(#mask-7)" stroke-width="2" fill="#F1A411" xlink:href="#path-6"></use>
+                        <use id="Rectangle-Copy-2" stroke="#FFCC76" mask="url(#mask-9)" stroke-width="2" fill="#F1A411" xlink:href="#path-8"></use>
                     </g>
                 </g>
             </g>
-            <g id="étoiles" mask="url(#mask-2)">
-                <g transform="translate(444.766665, 259.624663) rotate(-21.000000) translate(-444.766665, -259.624663) translate(140.766665, 153.124663)">
-                    <ellipse id="Oval-2" stroke="none" fill="#FFFACD" cx="179.774083" cy="130.897436" rx="3.2396789" ry="3.24786325"></ellipse>
-                    <circle id="Oval-21" stroke="none" fill="#FFFACD" cx="390.390638" cy="2.18575007" r="1.5"></circle>
-                    <circle id="Oval-22" stroke="none" fill="#FFFACD" cx="206.166071" cy="211.164349" r="1"></circle>
-                    <circle id="Oval-23" stroke="none" fill="#FFFACD" cx="406.143767" cy="179.030135" r="2"></circle>
-                    <circle id="Oval-24" stroke="none" fill="#FFFACD" cx="603.866311" cy="177.330662" r="4"></circle>
-                    <ellipse id="Oval-3" stroke="none" fill="#FFFACD" transform="translate(282.147936, 111.410256) rotate(91.000000) translate(-282.147936, -111.410256) " cx="282.147936" cy="111.410256" rx="7.12729358" ry="7.14529915"></ellipse>
-                    <ellipse id="Oval-5" stroke="none" fill="#FFFACD" transform="translate(240.680046, 60.743590) rotate(91.000000) translate(-240.680046, -60.743590) " cx="240.680046" cy="60.7435897" rx="3.2396789" ry="3.24786325"></ellipse>
-                    <ellipse id="Oval-5-Copy" stroke="none" fill="#FFFACD" transform="translate(278.242196, 9.860539) rotate(91.000000) translate(-278.242196, -9.860539) " cx="278.242196" cy="9.86053865" rx="3.2396789" ry="3.24786325"></ellipse>
-                    <ellipse id="Oval-6" stroke="none" fill="#FFFACD" transform="translate(405.903670, 71.786325) rotate(91.000000) translate(-405.903670, -71.786325) " cx="405.90367" cy="71.7863248" rx="7.77522936" ry="7.79487179"></ellipse>
-                    <ellipse id="Oval-6-Copy" stroke="none" fill="#FFFACD" transform="translate(120.233748, 30.779987) rotate(91.000000) translate(-120.233748, -30.779987) " cx="120.233748" cy="30.7799873" rx="7.77522936" ry="7.79487179"></ellipse>
-                    <ellipse id="Oval-7" stroke="none" fill="#FFFACD" transform="translate(449.315367, 149.085470) rotate(91.000000) translate(-449.315367, -149.085470) " cx="449.315367" cy="149.08547" rx="7.12729358" ry="7.14529915"></ellipse>
-                    <ellipse id="Oval-8" stroke="none" fill="#FFFACD" transform="translate(7.423165, 194.555556) rotate(91.000000) translate(-7.423165, -194.555556) " cx="7.42316514" cy="194.555556" rx="7.12729358" ry="7.14529915"></ellipse>
-                    <ellipse id="Oval-9" stroke="none" fill="#FFFACD" transform="translate(106.557339, 182.213675) rotate(91.000000) translate(-106.557339, -182.213675) " cx="106.557339" cy="182.213675" rx="3.88761468" ry="3.8974359"></ellipse>
-                    <ellipse id="Oval-10" stroke="none" fill="#FFFACD" transform="translate(86.471330, 119.205128) rotate(91.000000) translate(-86.471330, -119.205128) " cx="86.4713303" cy="119.205128" rx="1.94380734" ry="1.94871795"></ellipse>
-                    <ellipse id="Oval-11" stroke="none" fill="#FFFACD" transform="translate(251.047018, 162.076923) rotate(91.000000) translate(-251.047018, -162.076923) " cx="251.047018" cy="162.076923" rx="1.94380734" ry="1.94871795"></ellipse>
-                    <ellipse id="Oval-12" stroke="none" fill="#FFFACD" transform="translate(332.686927, 55.547009) rotate(91.000000) translate(-332.686927, -55.547009) " cx="332.686927" cy="55.5470085" rx="3.2396789" ry="3.24786325"></ellipse>
-                    <circle id="Oval-20" stroke="#979797" stroke-width="1" fill="#D8D8D8" cx="182" cy="9" r="3"></circle>
-                    <ellipse id="Oval-13" stroke="none" fill="#FFFACD" transform="translate(373.506881, 123.752137) rotate(91.000000) translate(-373.506881, -123.752137) " cx="373.506881" cy="123.752137" rx="1.29587156" ry="1.2991453"></ellipse>
-                    <ellipse id="Oval-14" stroke="none" fill="#FFFACD" transform="translate(348.237385, 138.692308) rotate(91.000000) translate(-348.237385, -138.692308) " cx="348.237385" cy="138.692308" rx="1.94380734" ry="1.94871795"></ellipse>
-                    <ellipse id="Oval-15" stroke="none" fill="#FFFACD" transform="translate(490.135321, 70.487179) rotate(91.000000) translate(-490.135321, -70.487179) " cx="490.135321" cy="70.4871795" rx="2.59174312" ry="2.5982906"></ellipse>
-                    <ellipse id="Oval-16" stroke="none" fill="#FFFACD" transform="translate(471.993119, 105.564103) rotate(91.000000) translate(-471.993119, -105.564103) " cx="471.993119" cy="105.564103" rx="1.29587156" ry="1.2991453"></ellipse>
-                    <ellipse id="Oval-17" stroke="none" fill="#FFFACD" transform="translate(558.816514, 105.564103) rotate(91.000000) translate(-558.816514, -105.564103) " cx="558.816514" cy="105.564103" rx="3.88761468" ry="3.8974359"></ellipse>
-                    <ellipse id="Oval-18" stroke="none" fill="#FFFACD" transform="translate(525.771789, 149.085470) rotate(91.000000) translate(-525.771789, -149.085470) " cx="525.771789" cy="149.08547" rx="1.94380734" ry="1.94871795"></ellipse>
-                    <ellipse id="Oval-19" stroke="none" fill="#FFFACD" transform="translate(142.841743, 84.777778) rotate(91.000000) translate(-142.841743, -84.777778) " cx="142.841743" cy="84.7777778" rx="1.29587156" ry="1.2991453"></ellipse>
-                </g>
+            <g id="étoiles" transform="translate(444.766665, 259.624663) rotate(-21.000000) translate(-444.766665, -259.624663) translate(140.766665, 153.124663)">
+                <ellipse id="Oval-2" fill="#FFFACD" cx="179.774083" cy="130.897436" rx="3.2396789" ry="3.24786325"></ellipse>
+                <circle id="Oval-21" fill="#FFFACD" cx="390.390638" cy="2.18575007" r="1.5"></circle>
+                <circle id="Oval-22" fill="#FFFACD" cx="206.166071" cy="211.164349" r="1"></circle>
+                <circle id="Oval-23" fill="#FFFACD" cx="406.143767" cy="179.030135" r="2"></circle>
+                <circle id="Oval-24" fill="#FFFACD" cx="603.866311" cy="177.330662" r="4"></circle>
+                <ellipse id="Oval-3" fill="#FFFACD" transform="translate(282.147936, 111.410256) rotate(91.000000) translate(-282.147936, -111.410256) " cx="282.147936" cy="111.410256" rx="7.12729358" ry="7.14529915"></ellipse>
+                <ellipse id="Oval-5" fill="#FFFACD" transform="translate(240.680046, 60.743590) rotate(91.000000) translate(-240.680046, -60.743590) " cx="240.680046" cy="60.7435897" rx="3.2396789" ry="3.24786325"></ellipse>
+                <ellipse id="Oval-5-Copy" fill="#FFFACD" transform="translate(278.242196, 9.860539) rotate(91.000000) translate(-278.242196, -9.860539) " cx="278.242196" cy="9.86053865" rx="3.2396789" ry="3.24786325"></ellipse>
+                <ellipse id="Oval-6" fill="#FFFACD" transform="translate(405.903670, 71.786325) rotate(91.000000) translate(-405.903670, -71.786325) " cx="405.90367" cy="71.7863248" rx="7.77522936" ry="7.79487179"></ellipse>
+                <ellipse id="Oval-6-Copy" fill="#FFFACD" transform="translate(120.233748, 30.779987) rotate(91.000000) translate(-120.233748, -30.779987) " cx="120.233748" cy="30.7799873" rx="7.77522936" ry="7.79487179"></ellipse>
+                <ellipse id="Oval-7" fill="#FFFACD" transform="translate(449.315367, 149.085470) rotate(91.000000) translate(-449.315367, -149.085470) " cx="449.315367" cy="149.08547" rx="7.12729358" ry="7.14529915"></ellipse>
+                <ellipse id="Oval-8" fill="#FFFACD" transform="translate(7.423165, 194.555556) rotate(91.000000) translate(-7.423165, -194.555556) " cx="7.42316514" cy="194.555556" rx="7.12729358" ry="7.14529915"></ellipse>
+                <ellipse id="Oval-9" fill="#FFFACD" transform="translate(106.557339, 182.213675) rotate(91.000000) translate(-106.557339, -182.213675) " cx="106.557339" cy="182.213675" rx="3.88761468" ry="3.8974359"></ellipse>
+                <ellipse id="Oval-10" fill="#FFFACD" transform="translate(86.471330, 119.205128) rotate(91.000000) translate(-86.471330, -119.205128) " cx="86.4713303" cy="119.205128" rx="1.94380734" ry="1.94871795"></ellipse>
+                <ellipse id="Oval-11" fill="#FFFACD" transform="translate(251.047018, 162.076923) rotate(91.000000) translate(-251.047018, -162.076923) " cx="251.047018" cy="162.076923" rx="1.94380734" ry="1.94871795"></ellipse>
+                <ellipse id="Oval-12" fill="#FFFACD" transform="translate(332.686927, 55.547009) rotate(91.000000) translate(-332.686927, -55.547009) " cx="332.686927" cy="55.5470085" rx="3.2396789" ry="3.24786325"></ellipse>
+                <circle id="Oval-20" stroke="#979797" fill="#D8D8D8" cx="182" cy="9" r="3"></circle>
+                <ellipse id="Oval-13" fill="#FFFACD" transform="translate(373.506881, 123.752137) rotate(91.000000) translate(-373.506881, -123.752137) " cx="373.506881" cy="123.752137" rx="1.29587156" ry="1.2991453"></ellipse>
+                <ellipse id="Oval-14" fill="#FFFACD" transform="translate(348.237385, 138.692308) rotate(91.000000) translate(-348.237385, -138.692308) " cx="348.237385" cy="138.692308" rx="1.94380734" ry="1.94871795"></ellipse>
+                <ellipse id="Oval-15" fill="#FFFACD" transform="translate(490.135321, 70.487179) rotate(91.000000) translate(-490.135321, -70.487179) " cx="490.135321" cy="70.4871795" rx="2.59174312" ry="2.5982906"></ellipse>
+                <ellipse id="Oval-16" fill="#FFFACD" transform="translate(471.993119, 105.564103) rotate(91.000000) translate(-471.993119, -105.564103) " cx="471.993119" cy="105.564103" rx="1.29587156" ry="1.2991453"></ellipse>
+                <ellipse id="Oval-17" fill="#FFFACD" transform="translate(558.816514, 105.564103) rotate(91.000000) translate(-558.816514, -105.564103) " cx="558.816514" cy="105.564103" rx="3.88761468" ry="3.8974359"></ellipse>
+                <ellipse id="Oval-18" fill="#FFFACD" transform="translate(525.771789, 149.085470) rotate(91.000000) translate(-525.771789, -149.085470) " cx="525.771789" cy="149.08547" rx="1.94380734" ry="1.94871795"></ellipse>
+                <ellipse id="Oval-19" fill="#FFFACD" transform="translate(142.841743, 84.777778) rotate(91.000000) translate(-142.841743, -84.777778) " cx="142.841743" cy="84.7777778" rx="1.29587156" ry="1.2991453"></ellipse>
             </g>
         </g>
     </g>
