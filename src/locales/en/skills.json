@@ -2,7 +2,7 @@
   "title": "Skills",
   "topSkills": {
     "dev": {
-      "title": "Developer",
+      "title": "Programming",
       "text": "I'm a great dev !"
       },
       "web": {
@@ -10,11 +10,11 @@
         "text": "I know everything about the web !"
       },
       "agile": {
-        "title": "Agile",
+        "title": "Agility",
         "text": "I'm a fucking ninja !"
       },
       "curious": {
-        "title": "Curious",
+        "title": "Curiosity",
         "text": "I'm very curious !"
       },
       "com": {
@@ -22,7 +22,7 @@
         "text": "I speak lots of languages !"
       },
       "dynamic": {
-        "title": "Dynamic",
+        "title": "Dynamism",
         "text": "I have lots of cool passions !"
       }
   },
