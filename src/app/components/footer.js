@@ -1,18 +1,27 @@
 import React, {PropTypes} from 'react';
 import {translate} from 'react-i18next';
 import FontAwesome from 'react-fontawesome';
+import Luke from '../../images/luke-saber.svg';
+import Vader from '../../images/vader-saber.svg';
 
 const MyFooter = React.createClass({
+
   getInitialState() {
-    return {open: false};
+    return {scroll: true};
   },
 
-  handleOpen() {
-    this.setState({open: true});
+  handleClick() {
+    this.setState({scroll: !this.state.scroll});
+    setTimeout(
+      () => {
+        this.setState({scroll: !this.state.scroll});
+      },
+      10
+    );
   },
 
-  handleClose() {
-    this.setState({open: false});
+  dynamicClass() {
+    return this.state.scroll ? "scroll" : "noscroll";
   },
 
   render() {
@@ -36,10 +45,24 @@ const MyFooter = React.createClass({
           </div>
         </div>
         <div id="starWars">
-          <a href="#close" className="button"></a>
+          <div id="starWarsTop">
+            <div id="starWarsTitle">
+              <h4>{t('footer:about')}</h4>
+            </div>
+            <div className="menu">
+              <a onClick={this.handleClick}>
+                <img id="luke" src={Luke} width="64px" height="64px" alt={t('footer:replay')}/><br/>
+                {t('footer:replay')}
+              </a>
+              <a href="#close">
+                <img id="vader" src={Vader} width="64px" height="64px" alt={t('footer:close')}/><br/>
+                {t('footer:close')}
+              </a>
+            </div>
+          </div>
           <div id="titles">
             <div id="titlecontent">
-              <p>{t('footer:credits')}</p>
+              <p className={this.dynamicClass()}>{t('footer:credits')}</p>
             </div>
           </div>
         </div>
