@@ -1,10 +1,22 @@
+#skillsBg {
+  background-color: rgb(237, 237, 237);
+  transform: skew(0deg, -5deg);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 #skills {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   padding: 1rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding-top: 40px;
-  background-color: white;
 
   .topSkill {
     margin: 10px;

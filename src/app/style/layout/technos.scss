@@ -1,0 +1,13 @@
+#technos {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  padding: 1rem;
+
+  #technosList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
