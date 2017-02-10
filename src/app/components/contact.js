@@ -1,6 +1,5 @@
 import React, {Component, PropTypes} from 'react';
 import {translate} from 'react-i18next';
-import TextField from 'material-ui/TextField';
 import FontIcon from 'material-ui/FontIcon';
 import {green500, green300} from 'material-ui/styles/colors';
 import Divider from 'material-ui/Divider';
@@ -50,18 +49,6 @@ class Contact extends Component {
             </div>
           </div>
           <div id="objects" className="col-lg-9 col-md-9 col-xs-12 col-sm-12">
-            <div id="contactForm" className="col-lg-9 col-md-9 col-xs-12 col-sm-12">
-              <div>
-                <h1>Contact</h1>
-                <div className="row">
-                  <TextField hintText={t('contact:name')} name="name" className="col-xs-12 col-sm-6 col-md-6 col-lg-6"/>
-                  <TextField hintText="Email" name="email" type="email" className="col-xs-12 col-sm-6 col-md-6 col-lg-6"/>
-                </div>
-                <div className="row">
-                  <TextField hintText={t('contact:message')} name="message" multiLine className="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
