@@ -77,11 +77,13 @@ class Technos extends Component {
     ];
     return (
       <section id="technos">
-        <h3>{t('technos:title')}</h3>
-        <div id="technosList">
-          {technos.map(tech => {
-            return <Techno avatar={tech.avatar} key={tech.key} text={tech.key}/>;
-          })}
+        <div className="container">
+          <h3>{t('technos:title')}</h3>
+          <div id="technosList">
+            {technos.map(tech => {
+              return <Techno avatar={tech.avatar} key={tech.key} text={tech.key}/>;
+            })}
+          </div>
         </div>
       </section>
     );
