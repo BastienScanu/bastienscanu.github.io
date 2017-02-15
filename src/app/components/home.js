@@ -1,13 +1,25 @@
 import React, {Component, PropTypes} from 'react';
 import {translate} from 'react-i18next';
+import Vivus from 'vivus';
 
 class Home extends Component {
+  componentDidMount() {
+    return new Vivus(
+      'name',
+      {
+        duration: 200,
+        type: "delayed",
+        reverseStack: true,
+        animTimingFunction: Vivus.EASE
+      }
+    );
+  }
   render() {
     const {t} = this.props;
     return (
       <section id="home">
         <div className="container">
-          <h1>Bastien Scanu</h1>
+          <object id="name" type="image/svg+xml" data="../../images/name.svg"></object>
           <h2>{t('home:job')}</h2>
         </div>
       </section>
