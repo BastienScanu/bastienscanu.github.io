@@ -24,7 +24,9 @@ class About extends Component {
                   />
               </div>
             </div>
-            <p className="col-xs-12 col-sm-6 col-md-8 col-lg-8">{t('about:pitch')}</p>
+            <div className="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+              <p>{t('about:pitch')}</p>
+            </div>
             <div id="profileLogoCol" className="col-xs-12 col-sm-3 col-md-2 col-lg-2">
             </div>
           </div>
