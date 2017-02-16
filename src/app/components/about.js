@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
-import RaisedButton from 'material-ui/RaisedButton';
 
 class About extends Component {
   render() {
@@ -14,14 +13,13 @@ class About extends Component {
               <div id="profilePic" className="row">
               </div>
               <div className="row">
-                <RaisedButton
-                  className="resumeButton"
-                  label={t('about:cv')}
-                  primary
+                <button
+                  className="withIcon"
                   href="http://bastien-scanu.com/CV.pdf"
-                  icon={<FontIcon className="material-icons" color="white">cloud_download</FontIcon>}
                   target="_blank"
-                  />
+                  >
+                  <FontIcon className="material-icons" color="white">cloud_download</FontIcon>{t('about:cv')}
+                </button>
               </div>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-8 col-lg-8">
