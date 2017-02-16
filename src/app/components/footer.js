@@ -1,8 +1,8 @@
 import React, {PropTypes} from 'react';
 import {translate} from 'react-i18next';
 import FontAwesome from 'react-fontawesome';
-import Luke from '../../images/luke-saber.svg';
-import Vader from '../../images/vader-saber.svg';
+import Luke from '../../images/icons/luke-saber.svg';
+import Vader from '../../images/icons/vader-saber.svg';
 
 const MyFooter = React.createClass({
 

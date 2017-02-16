@@ -1,8 +1,8 @@
 import React, {Component, PropTypes} from 'react';
-import logoWhite from '../../images/logo-white.svg';
-import logoBigWhite from '../../images/logo-white-big.svg';
-import logoBigBlack from '../../images/logo-black-big.svg';
-import logoGreen from '../../images/logo.svg';
+import logoWhite from '../../images/logo/logo-white.svg';
+import logoBigWhite from '../../images/logo/logo-white-big.svg';
+import logoBigBlack from '../../images/logo/logo-black-big.svg';
+import logoGreen from '../../images/logo/logo.svg';
 
 let logo = logoGreen;
 export class Logo extends Component {

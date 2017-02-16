@@ -24,7 +24,7 @@ class Home extends Component {
     return (
       <section id="home">
         <div className="container" id="hey">
-          <object id="name" type="image/svg+xml" data="../../images/name.svg"></object>
+          <object id="name" type="image/svg+xml" data="../../images/layout/name.svg"></object>
           <h2>{t('home:job')}</h2>
         </div>
       </section>

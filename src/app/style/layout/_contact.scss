@@ -4,12 +4,12 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 40px;
-  background: url('../../images/bg-contact.jpg') no-repeat;
+  background: url('../../images/layout/bg-contact.jpg') no-repeat;
   background-size: cover;
 }
 
 #smartphone {
-  background: url('../../images/smartphone.png') no-repeat;
+  background: url('../../images/layout/smartphone.png') no-repeat;
   background-size: contain;
   height: 400px;
   align-self: flex-end;
@@ -54,7 +54,7 @@
 }
 
 #objects {
-  background: url('../../images/bg-objects.png') no-repeat;
+  background: url('../../images/layout/bg-objects.png') no-repeat;
   background-size: contain;
   min-height: 450px;
   align-self: flex-end;

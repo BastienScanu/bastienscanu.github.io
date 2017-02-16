@@ -49,7 +49,7 @@ const JobCard = React.createClass({
             </div>
           </div>
           <div className="cardMedia">
-            <img src={`images/${this.props.name}.png`} alt={t(`experience:${this.props.name}.company`)}/>
+            <img src={`images/exp/${this.props.name}.png`} alt={t(`experience:${this.props.name}.company`)}/>
             <div className="overlay">
               <p>{t(`experience:${this.props.name}.date`)}</p>
             </div>
