@@ -2,9 +2,10 @@ import React, {Component, PropTypes} from 'react';
 import {translate} from 'react-i18next';
 import Vivus from 'vivus';
 
+let vivus;
 class Home extends Component {
   componentDidMount() {
-    return new Vivus(
+    vivus = new Vivus(
       'name',
       {
         duration: 200,
@@ -13,12 +14,16 @@ class Home extends Component {
         animTimingFunction: Vivus.EASE
       }
     );
+    document.getElementById("hey").onclick = this.handleClickName;
+  }
+  handleClickName() {
+    vivus.reset().play();
   }
   render() {
     const {t} = this.props;
     return (
       <section id="home">
-        <div className="container">
+        <div className="container" id="hey">
           <object id="name" type="image/svg+xml" data="../../images/name.svg"></object>
           <h2>{t('home:job')}</h2>
         </div>
