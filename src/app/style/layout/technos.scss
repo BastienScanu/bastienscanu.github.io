@@ -5,6 +5,18 @@
   align-items: center;
   padding: 1rem;
 
+  #side {
+    overflow: hidden;
+  }
+
+  .laptopPng {
+    background: url('../../images/layout/laptop.png') no-repeat;
+
+    object {
+      opacity: 0;
+    }
+  }
+
   #technosList {
     display: flex;
     flex-direction: row;
