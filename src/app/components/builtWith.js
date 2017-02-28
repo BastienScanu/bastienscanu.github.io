@@ -20,7 +20,7 @@ export class BuiltWith extends Component {
             })}
           </div>
           <div className="row">
-            <button><FontAwesome name="github"/> {t('builtWith:github')}</button>
+            <button><a href="https://github.com/BastienScanu/bastienscanu" target="_blank"><FontAwesome name="github"/> {t('builtWith:github')}</a></button>
           </div>
         </div>
       </section>
