@@ -4,6 +4,7 @@
   "license": "Hello",
   "dependencies": {
     "axios": "^0.9.1",
+    "gsap": "^1.19.1",
     "gulp-real-favicon": "^0.2.1",
     "i18next": "^3.4.4",
     "i18next-browser-languagedetector": "^1.0.1",

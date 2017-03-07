@@ -22,7 +22,7 @@ const Header = React.createClass({
   },
 
   handleScroll() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    if (document.body.scrollTop > window.innerHeight / 2 - 50 || document.documentElement.scrollTop > window.innerHeight / 2 - 50) {
       document.getElementById("header").className = `${this.dynamicClass()} green`;
     } else {
       document.getElementById("header").className = this.dynamicClass();
@@ -55,7 +55,6 @@ const Header = React.createClass({
           <div className="showMenu">
             <FontIcon onClick={this.handleClickMenu} className="material-icons" color={lightGreen50}>menu</FontIcon>
           </div>
-          <Logo size={32} big/>
           <Logo size={32} big white/>
           <Scrollspy items={['home', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
             <li><a href="#home">{t('header:home')}</a></li>
