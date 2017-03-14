@@ -1,42 +1,28 @@
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 40px;
-  background: url('../../images/layout/bg-contact.jpg') no-repeat;
-  background-size: cover;
+#smartphoneScreen {
+  h5 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(77, 77, 77, 1);
+    margin: 0.5rem 0.5rem 0;
+  }
+
+  a {
+    color: rgba(77, 77, 77, 1);
+  }
+
+  h6 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: rgba(153, 153, 153, 1);
+    margin: 0 0.3rem 0.3rem 0.7rem;
+  }
 }
 
-#smartphone {
-  background: url('../../images/layout/smartphone.png') no-repeat;
-  background-size: contain;
-  height: 400px;
-  align-self: flex-end;
-
+@media only screen and (min-width: 48em) {
   #smartphoneScreen {
     margin: 10px;
     position: relative;
     top: 50%;
-
-    h5 {
-      font-size: 0.9rem;
-      font-weight: 400;
-      color: rgba(77, 77, 77, 1);
-      margin: 0.5rem;
-      margin-bottom: 0;
-    }
-
-    a {
-      color: rgba(77, 77, 77, 1);
-    }
-
-    h6 {
-      font-size: 0.7rem;
-      font-weight: 300;
-      color: rgba(153, 153, 153, 1);
-      margin: 0 0.3rem 0.3rem 0.7rem;
-    }
 
     .row {
       padding-bottom: 5px;
@@ -51,26 +37,45 @@
       margin-right: -10px;
     }
   }
-}
 
-#objects {
-  background: url('../../images/layout/bg-objects.png') no-repeat;
-  background-size: contain;
-  min-height: 450px;
-  align-self: flex-end;
-  position: relative;
-}
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    background: url('../../images/layout/bg-contact.jpg') no-repeat;
+    background-size: cover;
+  }
 
-#contactForm {
-  background-color: rgba(255, 255, 255, 0.76);
-  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
-  border-radius: 2px;
-  padding: 5px;
-  position: absolute;
-  bottom: 0px;
+  #smartphone {
+    background: url('../../images/layout/smartphone.png') no-repeat;
+    background-size: contain;
+    height: 400px;
+    align-self: flex-end;
+  }
+
+  #objects {
+    background: url('../../images/layout/bg-objects.png') no-repeat;
+    background-size: contain;
+    min-height: 450px;
+    align-self: flex-end;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 48em) {
+  #objects {
+    display: none;
+  }
 
   .row {
-    margin: 5px;
-    overflow: hidden;
+    margin: 0
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 }
