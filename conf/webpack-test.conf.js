@@ -25,7 +25,6 @@ module.exports = {
     ]
   },
   plugins: [],
-  debug: true,
   devtool: 'source-map',
   externals: {
     'react/lib/ExecutionEnvironment': true,

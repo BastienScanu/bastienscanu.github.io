@@ -7,39 +7,31 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint'
-      }
-    ],
-
     loaders: [
       {
-        test: /.json$/,
-        loaders: [
-          'json'
-        ]
+        test: /\.js$/,
+        enforce: 'pre',
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
       },
       {
         test: /\.(css|scss)$/,
         loaders: [
-          'style',
-          'css',
-          'sass',
-          'postcss'
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          'postcss-loader'
         ]
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: [
-          'babel'
+          'babel-loader'
         ]
       },
       {
-        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        test: /\.(eot|woff|woff2|svg|ttf)([?]?.*)$/,
         loader: "file-loader"
       },
       {
@@ -58,10 +50,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.LoaderOptionsPlugin({options: {postcss: [autoprefixer]}})
   ],
-  postcss: () => [autoprefixer],
-  debug: true,
   devtool: 'source-map',
   output: {
     path: path.join(process.cwd(), conf.paths.tmp),
