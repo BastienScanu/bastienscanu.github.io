@@ -1,0 +1,13 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  padding: 1rem;
+
+  .stat {
+    background-color: #F0F0F0;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
