@@ -9,6 +9,7 @@ class Contact extends Component {
     const {t} = this.props;
     return (
       <section id="contact">
+        <h1>{t('contact:title')}</h1>
         <div className="container row">
           <div id="smartphone" className="col-xs-12 col-sm-12 col-lg-3 col-md-3">
             <div id="smartphoneScreen">
