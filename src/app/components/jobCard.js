@@ -1,7 +1,8 @@
 import React, {PropTypes} from 'react';
 import {translate} from 'react-i18next';
-import {Card} from 'material-ui/Card';
 import FontIcon from 'material-ui/FontIcon';
+import {Collapse} from 'react-collapse';
+import Divider from 'material-ui/Divider';
 
 const JobCard = React.createClass({
 
@@ -15,10 +16,6 @@ const JobCard = React.createClass({
     this.setState(state => {
       return {seeDetails: !state.seeDetails};
     });
-  },
-
-  dynamicClass() {
-    return `jobCard${this.state.seeDetails ? "Details" : ""}`;
   },
 
   subTitles() {
@@ -37,30 +34,47 @@ const JobCard = React.createClass({
   render() {
     const {t} = this.props;
     return (
-      <div className={this.dynamicClass()}>
-        <Card containerStyle={{height: '100%'}} style={{height: '100%'}}>
-          <div className="cardHeader" onClick={this.handleCLickMore}>
-            <div>
-              <h1>{t(`experience:${this.props.name}.company`)}</h1>
-              <h2>{t(`experience:${this.props.name}.job`)}</h2>
-            </div>
-            <div className="cardHeaderIcon">
-              <FontIcon className="material-icons">{t(`experience:${this.props.name}.type`)}</FontIcon>
-            </div>
+      <div className="jobCard">
+        <div className="cardHeader" onClick={this.handleCLickMore}>
+          <div>
+            <h1>{t(`experience:${this.props.name}.company`)}</h1>
+            <h2>{t(`experience:${this.props.name}.job`)}</h2>
           </div>
-          <div className="cardMedia">
-            <img src={`images/exp/${this.props.name}.png`} alt={t(`experience:${this.props.name}.company`)}/>
-            <div className="overlay">
-              <p>{t(`experience:${this.props.name}.date`)}</p>
-            </div>
-            <div className="cardDetails">
-              <h1>{this.subTitles().type}</h1>
-              <p>{t(`experience:${this.props.name}.desc`)}</p>
-              <h1>{this.subTitles().mission}</h1>
-              <p>{t(`experience:${this.props.name}.mission`)}</p>
-            </div>
+          <div className="cardHeaderIcon">
+            <FontIcon className="material-icons">{t(`experience:${this.props.name}.type`)}</FontIcon>
           </div>
-        </Card>
+        </div>
+        <div className="cardDetails">
+          <Collapse isOpened={this.state.seeDetails}>
+            <h1>{this.subTitles().type}</h1>
+            <p>{t(`experience:${this.props.name}.desc`)}</p>
+            <br/>
+            <h1>{this.subTitles().mission}</h1>
+            <p>{t(`experience:${this.props.name}.mission`)}</p>
+            <Divider style={{marginTop: 15, marginBottom: 5}}/>
+            <div className="row cardLinks">
+              <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <a href={t(`experience:${this.props.name}.maps`)} target="_blank">
+                  <FontIcon className="material-icons">room</FontIcon> {t(`experience:${this.props.name}.location`)}
+                </a>
+              </div>
+              <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <a href={t(`experience:${this.props.name}.website`)} target="_blank">
+                  <FontIcon className="material-icons">language</FontIcon> {t(`experience:website`)}
+                </a>
+              </div>
+            </div>
+          </Collapse>
+          <div className="seeMore" onClick={this.handleCLickMore}>
+            <FontIcon className="material-icons">{this.state.seeDetails ? "keyboard_arrow_up" : "keyboard_arrow_down"}</FontIcon>
+          </div>
+        </div>
+        <div className="cardMedia">
+          <img src={`images/exp/${this.props.name}.png`} alt={t(`experience:${this.props.name}.company`)}/>
+          <div className="overlay">
+            <p>{t(`experience:${this.props.name}.date`)}</p>
+          </div>
+        </div>
       </div>
     );
   },
