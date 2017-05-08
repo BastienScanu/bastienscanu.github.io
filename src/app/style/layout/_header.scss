@@ -84,7 +84,7 @@ header {
       list-style: none;
     }
 
-    .current-menu a {
+    .current-menu {
       color: rgba(255, 255, 255, 1);
     }
 
@@ -100,7 +100,7 @@ header {
       transition: transform 0.1s;
     }
 
-    .current-menu a::before {
+    .current-menu::before {
       transform: scale3d(1, 1, 1);
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 0.3s;
@@ -135,7 +135,7 @@ header {
       transition: color 0.3s;
     }
 
-    .current-menu a {
+    .current-menu {
       color: rgb(256, 256, 256);
       text-shadow: 0 1px 1px rgba(0,0,0,0.42);
     }
@@ -152,7 +152,7 @@ header {
       transition: transform 0.1s;
     }
 
-    .current-menu a::before {
+    .current-menu::before {
       transform: scale3d(1, 1, 1);
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 0.3s;
@@ -191,7 +191,7 @@ header {
       transition: color 0.3s;
     }
 
-    .current-menu a {
+    .current-menu {
       color: rgb(256, 256, 256);
       text-shadow: 0 1px 1px rgba(0,0,0,0.42);
     }
@@ -208,7 +208,7 @@ header {
       transition: transform 0.1s;
     }
 
-    .current-menu a::before {
+    .current-menu::before {
       transform: scale3d(1, 1, 1);
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 0.3s;

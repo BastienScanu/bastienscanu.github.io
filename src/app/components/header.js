@@ -1,7 +1,8 @@
 import React, {PropTypes} from 'react';
 import {Logo} from './logo';
 import i18n from 'i18next';
-const Scrollspy = require('react-scrollspy').Scrollspy;
+import Scroll from 'react-scroll';
+const Link = Scroll.Link;
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
 import {lightGreen50} from 'material-ui/styles/colors';
@@ -56,12 +57,20 @@ const Header = React.createClass({
             <FontIcon onClick={this.handleClickMenu} className="material-icons" color={lightGreen50}>menu</FontIcon>
           </div>
           <Logo size={32} big white/>
-          <Scrollspy items={['home', 'skills', 'experience', 'contact']} currentClassName="current-menu" className="navBar">
-            <li><a href="#home">{t('header:home')}</a></li>
-            <li><a href="#skills">{t('header:skills')}</a></li>
-            <li><a href="#experience">{t('header:experience')}</a></li>
-            <li><a href="#contact">{t('header:contact')}</a></li>
-          </Scrollspy>
+          <ul className="navBar">
+            <li>
+              <Link activeClass="current-menu" to="home" spy smooth duration={500}>{t('header:home')}</Link>
+            </li>
+            <li>
+              <Link activeClass="current-menu" to="skills" spy smooth duration={500}>{t('header:skills')}</Link>
+            </li>
+            <li>
+              <Link activeClass="current-menu" to="experience" spy smooth duration={500}>{t('header:experience')}</Link>
+            </li>
+            <li>
+              <Link activeClass="current-menu" to="contact" spy smooth duration={500}>{t('header:contact')}</Link>
+            </li>
+          </ul>
           <ul className="langs">
             <li onClick={this.handleClickEn}>EN</li>
             <li onClick={this.handleClickFr}>FR</li>
