@@ -65,7 +65,7 @@ const Header = React.createClass({
               <Link activeClass="current-menu" to="skills" spy smooth duration={500}>{t('header:skills')}</Link>
             </li>
             <li>
-              <Link activeClass="current-menu" to="experience" spy smooth duration={500}>{t('header:experience')}</Link>
+              <Link activeClass="current-menu" to="experience" spy smooth offset={-90} duration={500}>{t('header:experience')}</Link>
             </li>
             <li>
               <Link activeClass="current-menu" to="contact" spy smooth duration={500}>{t('header:contact')}</Link>

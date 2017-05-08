@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  padding-top: 40px;
   background: url('../../images/layout/experience.jpg');
   background-size: cover;
 
@@ -61,7 +60,7 @@
       	height: 100%;
       	outline: none;
       	border-radius: 50%;
-      	background-color: rgba(45, 192, 78, 0.76);
+      	background-color: rgba(256, 256, 256, 0.76);
       	text-indent: -999em;
       	cursor: pointer; /* make the text accessible to screen readers */
       	position: absolute;
@@ -71,13 +70,13 @@
 
       span:hover,
       span:focus {
-        background-color: rgba(45, 192, 78, 1);
+        background-color: white;
       }
     }
 
     .selectedDot span {
       background-color: transparent;
-      box-shadow: 0 0 0 2px rgba(45, 192, 78, 1);
+      box-shadow: 0 0 0 2px white;
     }
   }
 }

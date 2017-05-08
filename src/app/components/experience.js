@@ -8,8 +8,8 @@ class Experience extends Component {
     const {t} = this.props;
     return (
       <section id="experience">
+        <p className="centeredTitle">{t('experience:title')}</p>
         <div className="container">
-          <h1>{t('experience:title')}</h1>
           <TimeLine
             cards={[
               {
