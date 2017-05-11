@@ -10,4 +10,72 @@
     padding: 1rem;
     margin: 1rem;
   }
+
+  #mainSkills {
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20), 0px 1px 5px 0px rgba(0,0,0,0.13);
+    border-radius: 3px;
+
+    .red:hover {
+      border-bottom: 3px solid rgb(230, 42, 16);
+      padding-bottom: 3px;
+    }
+
+    .orange:hover {
+      border-bottom: 3px solid rgb(256, 152, 0);
+      padding-bottom: 3px;
+    }
+
+    .green:hover {
+      border-bottom: 3px solid $vert;
+      padding-bottom: 3px;
+    }
+
+    .blue:hover {
+      border-bottom: 3px solid rgb(2, 119, 189);
+      padding-bottom: 3px;
+    }
+
+    .purple:hover {
+      border-bottom: 3px solid #AB47BC;
+      padding-bottom: 3px;
+    }
+
+    .skillHeader {
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      span {
+        margin-right: 15px;
+      }
+      border-bottom: 1px solid rgb(199, 199, 199);
+      background-color: rgb(249, 249, 249);
+      padding: 5px 0 5px 15px;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.67);
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    .ReactCollapse--collapse {
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.64);
+    }
+
+    .tag {
+      background: #EAEAEA;
+      border: 1px solid #979797;
+      border-radius: 2px;
+      padding: 2px;
+      margin: 5px;
+      color: rgb(94, 94, 94);
+      font-size: 0.9rem;
+      font-weight: 200;
+    }
+
+    * {
+      margin: 0;
+    }
+  }
 }
