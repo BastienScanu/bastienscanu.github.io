@@ -8,7 +8,7 @@ import Qualities from './components/qualities';
 import Skills from './components/skills';
 import BuiltWith from './components/builtWith';
 import About from './components/about';
-import ActionButton from './components/actionButton';
+import ActionButton from './components/elements/actionButton';
 
 export class Main extends Component {
   render() {

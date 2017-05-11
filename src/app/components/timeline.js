@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import FontIcon from 'material-ui/FontIcon';
-import JobCard from './jobCard';
+import JobCard from './elements/jobCard';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import Toggle from 'material-ui/Toggle';
 
