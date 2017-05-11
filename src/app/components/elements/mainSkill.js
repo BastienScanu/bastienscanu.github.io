@@ -7,6 +7,15 @@ import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
 
 class MainSkill extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.props.handler(this.props.index);
+  }
+
   render() {
     const {t} = this.props;
     const style = this.props.isOpened ?
@@ -19,7 +28,7 @@ class MainSkill extends Component {
     const className = t(`skills:${this.props.name}.theme`);
     return (
       <div>
-        <div className={`skillHeader ${className}`} style={style} onClick={this.props.handler}>
+        <div className={`skillHeader ${className}`} style={style} onClick={this.handleClick}>
           <div>
             <FontAwesome name={t(`skills:${this.props.name}.icon`)}/>
             {t(`skills:${this.props.name}.title`)}
@@ -51,6 +60,7 @@ class MainSkill extends Component {
 MainSkill.propTypes = {
   t: PropTypes.func,
   name: PropTypes.string,
+  index: PropTypes.number,
   isOpened: PropTypes.bool,
   handler: PropTypes.func
 };

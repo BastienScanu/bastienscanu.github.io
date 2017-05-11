@@ -11,26 +11,6 @@ const MainSkills = React.createClass({
     };
   },
 
-  switchdesign() {
-    return this.updateState(0);
-  },
-
-  switchfront() {
-    return this.updateState(1);
-  },
-
-  switchback() {
-    return this.updateState(2);
-  },
-
-  switchdatabase() {
-    return this.updateState(3);
-  },
-
-  switchos() {
-    return this.updateState(4);
-  },
-
   updateState(index) {
     this.setState(state => {
       if (state.openedMenu === index) {
@@ -60,7 +40,8 @@ const MainSkills = React.createClass({
                 <MainSkill
                   name={skill}
                   key={index}
-                  handler={this[`switch${skill}`]}
+                  handler={this.updateState}
+                  index={index}
                   isOpened={this.state.openedMenu === index}
                   />
               );
