@@ -53,7 +53,14 @@
   "soft": "Compétences transversales",
   "dev": "Programmation",
   "web": "Développement Web",
-  "languages": "Langues",
+  "languages": {
+      "title": "Langues",
+      "fr": "Français",
+      "en": "Anglais",
+      "es": "Espagnol",
+      "native": "Langue maternelle",
+      "fpp": "Compétence professionnelle complète"
+    },
   "others": "Autres Compétences",
   "technos": {
     "angular": "AngularJS",

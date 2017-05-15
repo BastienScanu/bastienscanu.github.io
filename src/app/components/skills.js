@@ -1,14 +1,15 @@
 import React, {Component, PropTypes} from 'react';
 import {translate} from 'react-i18next';
 import MainSkills from './mainSkills';
+import Languages from './languages';
 
 class Skills extends Component {
   render() {
     const {t} = this.props;
     return (
       <section id="skills">
+        <p className="centeredTitle">{t('skills:title')}</p>
         <div className="container">
-          <h3>{t('skills:title')}</h3>
           <MainSkills/>
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -17,9 +18,7 @@ class Skills extends Component {
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <div className="stat">
-                <h4>{t('skills:languages')}</h4>
-              </div>
+              <Languages/>
             </div>
           </div>
         </div>
