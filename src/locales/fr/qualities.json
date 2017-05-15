@@ -1,5 +1,5 @@
 {
-  "title": "Compétences",
+  "title": "Mes qualités",
   "topSkills": {
     "dev": {
       "title": "Programmation",
@@ -25,24 +25,5 @@
         "title": "Dynamisme",
         "text": "J'ai plein de passions trop cools !"
       }
-  },
-  "technos": {
-    "angular": "AngularJS",
-    "react": "React",
-    "nodejs": "Node.js",
-    "mongo": "MongoDB",
-    "express": "Express",
-    "java": "Java",
-    "php": "PHP",
-    "sql": "SQL",
-    "c": "C/C++",
-    "html": "HTML5",
-    "css": "CSS3",
-    "docker": "Docker",
-    "git": "Git",
-    "scrum": "SCRUM",
-    "machine": "Machine Learning",
-    "socket": "Socket.io",
-    "es6": "ECMA Script 6"
   }
 }

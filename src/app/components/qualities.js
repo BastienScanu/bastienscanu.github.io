@@ -8,6 +8,7 @@ class Qualities extends Component {
       <section id="qualities">
         <div id="qualitiesBg">
         </div>
+        <p className="centeredTitle">{t('qualities:title')}</p>
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
