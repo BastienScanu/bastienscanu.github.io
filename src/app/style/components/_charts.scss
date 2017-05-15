@@ -1,0 +1,44 @@
+.progressBar {
+  width: 100%;
+
+  .filledProgressBar {
+    width: 0;
+    height: 50px;/* Rectangle 22: */
+    background: #007AB7;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+}
+
+.CircularProgressbar {
+  width: 100%;
+}
+
+.greenChart path {
+  stroke: $vert;
+}
+
+.blueChart path {
+  stroke: rgb(2, 119, 189);
+}
+
+.orangeChart path {
+  stroke: rgb(256, 152, 0);
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: rgba(0, 0, 0, 0.67);
+  font-size: 1rem;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
