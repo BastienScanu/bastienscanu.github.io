@@ -16,8 +16,10 @@ export class Main extends Component {
       <div>
         <Header/>
         <Home/>
-        <About/>
-        <Qualities/>
+        <div id="about">
+          <About/>
+          <Qualities/>
+        </div>
         <Skills/>
         <Experience/>
         <BuiltWith/>

@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     const {t} = this.props;
     return (
-      <section id="about">
+      <section id="aboutMe">
         <div className="container">
           <div className="row">
             <div id="profilePicCol" className="col-xs-12 col-sm-3 col-md-2 col-lg-2">
@@ -23,7 +23,7 @@ class About extends Component {
               </div>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-              <p>{t('about:pitch')}</p>
+              <p id="pitch">{t('about:pitch')}</p>
             </div>
             <div id="profileLogoCol" className="col-xs-12 col-sm-3 col-md-2 col-lg-2">
             </div>
