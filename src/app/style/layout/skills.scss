@@ -11,6 +11,18 @@
     margin: 1rem;
   }
 
+  #languagesPic {
+    background: url('../../images/layout/languages.jpg');
+    background-size: cover;
+    min-height: 300px;
+  }
+
+  #softPic {
+    background: url('../../images/layout/soft-skills.jpg');
+    background-size: cover;
+    min-height: 300px;
+  }
+
   #mainSkills {
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20), 0px 1px 5px 0px rgba(0,0,0,0.13);
     border-radius: 3px;
@@ -77,6 +89,10 @@
     * {
       margin: 0;
     }
+  }
+
+  .otherSkill {
+    padding: 15px;
   }
 
   #languages {
