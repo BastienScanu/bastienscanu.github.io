@@ -82,7 +82,7 @@
         "important": false
       },
       {
-        "name": "Algorithmie",
+        "name": "Algorithmique",
         "important": false
       },
       {
@@ -90,7 +90,7 @@
         "important": true
       }
     ],
-    "desc": "",
+    "desc": "Trois ans d'expérience en entreprise en tant que développeur Node.js (ES6). Bonnes compétences en programmation logicielle et algorithmique.",
     "icon": "cogs",
     "color": "#2BAF2B",
     "theme": "green"
@@ -111,7 +111,7 @@
         "important": true
       }
     ],
-    "desc": "",
+    "desc": "Conception et architecture de base de données, gestion de bases de données relationnelles mais aussi No-SQL.",
     "icon": "database",
     "color": "#0277BD",
     "theme": "blue"
@@ -140,7 +140,7 @@
         "important": false
       }
     ],
-    "desc": "",
+    "desc": "Habitué à travailler sous les trois principaux systèmes d'exploitation. Utilisation de Docker dans le cadre professionnel.",
     "icon": "terminal",
     "color": "#AB47BC",
     "theme": "purple"
