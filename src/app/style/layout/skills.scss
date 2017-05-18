@@ -5,12 +5,6 @@
   align-items: center;
   padding: 1rem;
 
-  .stat {
-    background-color: #F0F0F0;
-    padding: 1rem;
-    margin: 1rem;
-  }
-
   #languagesPic {
     background: url('../../images/layout/languages.jpg');
     background-size: cover;
@@ -23,9 +17,54 @@
     min-height: 300px;
   }
 
+  .skillCard {
+    box-shadow: 0 5px 12px rgba(50, 93, 50, .1), 0 3px 7px rgba(0, 0, 0, .07);
+    border-radius: 4px;
+    padding: 20px;
+
+    h4 {
+      margin: 0;
+    }
+
+    @keyframes blinker {
+      50% { opacity: 0.25; }
+    }
+
+    .tag-cloud {
+      color: rgb(70, 70, 70);
+      line-height: 2.5rem;
+      text-align: center;
+
+      .tag-1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      .tag-2 {
+        font-size: 2rem;
+        font-weight: 200;
+      }
+
+      .tag-3 {
+        font-size: 3rem;
+        font-weight: 300;
+      }
+
+      .tag-4 {
+        font-size: 3.5rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .skillCard:hover {
+    box-shadow: 0 10px 25px rgba(50, 93, 50, .1), 0 5px 15px rgba(0, 0, 0, .07);
+  }
+
   #mainSkills {
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20), 0px 1px 5px 0px rgba(0,0,0,0.13);
     border-radius: 3px;
+    margin-bottom: 20px;
 
     .red:hover {
       border-bottom: 3px solid rgb(230, 42, 16);

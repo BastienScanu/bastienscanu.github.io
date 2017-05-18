@@ -59,7 +59,18 @@
       "native": "Mother tongue",
       "fpp": "Full professional proficiency"
     },
-  "soft": "Soft Skills",
+  "soft": {
+    "title": "Soft skills",
+    "skills": {
+      "team": "Teamwork",
+      "agility": "Agility",
+      "autonomy": "Autonomy",
+      "communication": "Communication",
+      "creativity": "Creativity",
+      "curiosity": "Curiosity",
+      "project": "Project Management"
+    }
+  },
   "dev": "Programming",
   "web": "Web Development",
   "others": "Other Skills",
