@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import MainSkill from './elements/mainSkill';
 import {translate} from 'react-i18next';
 import SkillsRadar from './charts/skillsRadar';
@@ -37,15 +37,11 @@ const MainSkills = React.createClass({
   },
 
   render() {
-    const {t} = this.props;
     const skills = [
       "design", "front", "back", "database", "os"
     ];
     return (
       <div className="row">
-        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>{t('skills:web')}</h3>
-        </div>
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           {this.getChart()}
         </div>
@@ -67,9 +63,6 @@ const MainSkills = React.createClass({
         </div>
       </div>
     );
-  },
-  propTypes: {
-    t: PropTypes.func
   }
 });
 
