@@ -2,7 +2,6 @@ import {Collapse} from 'react-collapse';
 import React, {PropTypes, Component} from 'react';
 import {translate} from 'react-i18next';
 import data from '../../../locales/fr/skills.json';
-import Divider from 'material-ui/Divider';
 import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
 
@@ -36,21 +35,24 @@ class MainSkill extends Component {
           <FontIcon className="material-icons expand">{this.props.isOpened ? 'expand_less' : 'expand_more'}</FontIcon>
         </div>
         <Collapse isOpened={this.props.isOpened}>
-          <div className="col-xs col-sm col-md col-lg">
-            <p>
-              {t(`skills:${this.props.name}.desc`)}
-            </p>
+          <div className="margin"></div>
+          <div className="row">
+            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <ul className="row">
+              {technos.map(techno => {
+                return (
+                  <li className={techno.important ? "tag importantTag" : "tag"} key={techno.name}>{techno.name}</li>
+                );
+              })}
+              </ul>
+            </div>
+            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <p>
+                {t(`skills:${this.props.name}.desc`)}
+              </p>
+            </div>
           </div>
-          <Divider/>
-          <div className="col-xs col-sm col-md col-lg">
-            <ul className="row">
-            {technos.map(techno => {
-              return (
-                <li className="tag" key={techno}>{techno}</li>
-              );
-            })}
-            </ul>
-          </div>
+          <div className="margin"></div>
         </Collapse>
       </div>
     );

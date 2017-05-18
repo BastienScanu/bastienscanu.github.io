@@ -2,7 +2,18 @@
   "title": "Skills","design": {
     "title": "Design",
     "technos": [
-      "Photoshop", "Sketch"
+      {
+        "name": "Photoshop",
+        "important": true
+      },
+      {
+        "name": "Sketch",
+        "important": true
+      },
+      {
+        "name": "Illustrator",
+        "important": false
+      }
     ],
     "desc": "Réalisation de logos pour des associations, maquettes de sites webs, t-shirts, autocollants...",
     "icon": "paint-brush",
@@ -12,7 +23,34 @@
   "front": {
     "title": "Front-End",
     "technos": [
-      "HTML5", "CSS3", "ECMA Script 6", "AngularJS", "React", "SASS"
+      {
+        "name": "HTML5",
+        "important": true
+      },
+      {
+        "name": "CSS3",
+        "important": true
+      },
+      {
+        "name": "ECMA Script 6",
+        "important": true
+      },
+      {
+        "name": "AngularJS",
+        "important": true
+      },
+      {
+        "name": "React",
+        "important": false
+      },
+      {
+        "name": "SASS",
+        "important": false
+      },
+      {
+        "name": "jQuery",
+        "important": false
+      }
     ],
     "desc": "Très bonne connaissance des langages du web HTML5, CSS3 et Javascript. Maîtrise de frameworks modernes tels que AngularJS et React.",
     "icon": "desktop",
@@ -22,7 +60,34 @@
   "back": {
     "title": "Back-End",
     "technos": [
-      "ECMA Script 6", "Node.js", "PHP", "Java", "C/C++", "Python", "Algorithmie"
+      {
+        "name": "ECMA Script 6",
+        "important": true
+      },
+      {
+        "name": "Node.js",
+        "important": true
+      },
+      {
+        "name": "PHP",
+        "important": false
+      },
+      {
+        "name": "Java",
+        "important": true
+      },
+      {
+        "name": "C/C++",
+        "important": false
+      },
+      {
+        "name": "Algorithmie",
+        "important": false
+      },
+      {
+        "name": "socket.io",
+        "important": true
+      }
     ],
     "desc": "",
     "icon": "cogs",
@@ -32,7 +97,18 @@
   "database": {
     "title": "Databases",
     "technos": [
-      "MongoDB", "Redis", "SQL"
+      {
+        "name": "MongoDB",
+        "important": true
+      },
+      {
+        "name": "Redis",
+        "important": false
+      },
+      {
+        "name": "SQL",
+        "important": true
+      }
     ],
     "desc": "",
     "icon": "database",
@@ -42,7 +118,26 @@
   "os": {
     "title": "Operating Systems",
     "technos": [
-      "MacOS", "Linux", "Windows", "Shell", "Docker"
+      {
+        "name": "MacOS",
+        "important": true
+      },
+      {
+        "name": "Linux",
+        "important": true
+      },
+      {
+        "name": "Windows",
+        "important": true
+      },
+      {
+        "name": "Shell",
+        "important": true
+      },
+      {
+        "name": "Docker",
+        "important": false
+      }
     ],
     "desc": "",
     "icon": "terminal",
