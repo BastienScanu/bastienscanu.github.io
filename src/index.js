@@ -1,7 +1,6 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, browserHistory} from 'react-router';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -25,8 +24,6 @@ injectTapEventPlugin();
 ReactDOM.render(
   <MuiThemeProvider muiTheme={getMuiTheme(greenTheme)}>
     <I18nextProvider i18n={i18n}>
-      <Router history={browserHistory}>
-        <Route path="/" component={Main}/>
-      </Router>
+      <Main/>
     </I18nextProvider>
   </MuiThemeProvider>, document.getElementById('root'));
