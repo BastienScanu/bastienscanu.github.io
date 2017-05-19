@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import MainSkill from './elements/mainSkill';
 import {translate} from 'react-i18next';
 import SkillsRadar from './charts/skillsRadar';
@@ -8,13 +8,13 @@ import BackChart from './charts/backChart';
 import DatabaseChart from './charts/databaseChart';
 import OsChart from './charts/osChart';
 
-const MainSkills = React.createClass({
-
-  getInitialState() {
-    return {
-      openedMenu: -1
-    };
-  },
+class MainSkills extends Component {
+  constructor() {
+    super();
+    this.updateState = this.updateState.bind(this);
+    this.getChart = this.getChart.bind(this);
+    this.state = {openedMenu: -1};
+  }
 
   updateState(index) {
     this.setState(state => {
@@ -23,7 +23,7 @@ const MainSkills = React.createClass({
       }
       return {openedMenu: index};
     });
-  },
+  }
 
   getChart() {
     switch (this.state.openedMenu) {
@@ -34,7 +34,7 @@ const MainSkills = React.createClass({
       case 4: return <OsChart/>;
       default: return <SkillsRadar/>;
     }
-  },
+  }
 
   render() {
     const skills = [
@@ -64,6 +64,6 @@ const MainSkills = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default translate(["common", "skills"], {wait: true})(MainSkills);

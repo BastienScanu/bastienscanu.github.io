@@ -1,22 +1,23 @@
-import React, {PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
 import {Collapse} from 'react-collapse';
 import Divider from 'material-ui/Divider';
 
-const JobCard = React.createClass({
-
-  getInitialState() {
-    return {
-      seeDetails: false
-    };
-  },
+class JobCard extends Component {
+  constructor() {
+    super();
+    this.handleCLickMore = this.handleCLickMore.bind(this);
+    this.subTitles = this.subTitles.bind(this);
+    this.state = {seeDetails: false};
+  }
 
   handleCLickMore() {
     this.setState(state => {
       return {seeDetails: !state.seeDetails};
     });
-  },
+  }
 
   subTitles() {
     const {t} = this.props;
@@ -29,7 +30,7 @@ const JobCard = React.createClass({
       type: t('experience:school'),
       mission: t('experience:course')
     };
-  },
+  }
 
   render() {
     const {t} = this.props;
@@ -77,13 +78,13 @@ const JobCard = React.createClass({
         </div>
       </div>
     );
-  },
-
-  propTypes: {
-    t: PropTypes.func,
-    type: PropTypes.string,
-    name: PropTypes.string
   }
-});
+}
+
+JobCard.propTypes = {
+  t: PropTypes.func,
+  type: PropTypes.string,
+  name: PropTypes.string
+};
 
 export default translate(["common", "experience"], {wait: true})(JobCard);

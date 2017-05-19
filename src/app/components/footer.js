@@ -1,14 +1,17 @@
-import React, {PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import FontAwesome from 'react-fontawesome';
 import Luke from '../../images/icons/luke-saber.svg';
 import Vader from '../../images/icons/vader-saber.svg';
 
-const MyFooter = React.createClass({
-
-  getInitialState() {
-    return {scroll: true};
-  },
+class MyFooter extends Component {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+    this.dynamicClass = this.dynamicClass.bind(this);
+    this.state = {scroll: true};
+  }
 
   handleClick() {
     this.setState({scroll: !this.state.scroll});
@@ -18,11 +21,11 @@ const MyFooter = React.createClass({
       },
       10
     );
-  },
+  }
 
   dynamicClass() {
     return this.state.scroll ? "scroll" : "noscroll";
-  },
+  }
 
   render() {
     const {t} = this.props;
@@ -68,11 +71,11 @@ const MyFooter = React.createClass({
         </div>
       </footer>
     );
-  },
-
-  propTypes: {
-    t: PropTypes.func
   }
-});
+}
+
+MyFooter.propTypes = {
+  t: PropTypes.func
+};
 
 export default translate(["common", "footer"], {wait: true})(MyFooter);

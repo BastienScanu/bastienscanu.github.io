@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import logoWhite from '../../images/logo/logo-white.svg';
 import logoBigWhite from '../../images/logo/logo-white-big.svg';
 import logoBigBlack from '../../images/logo/logo-black-big.svg';

@@ -1,5 +1,6 @@
 import {Collapse} from 'react-collapse';
-import React, {PropTypes, Component} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import data from '../../../locales/fr/skills.json';
 import FontIcon from 'material-ui/FontIcon';

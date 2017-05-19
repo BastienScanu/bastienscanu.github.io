@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Chip from 'material-ui/Chip';
 import Avatar from 'material-ui/Avatar';
 import {translate} from 'react-i18next';

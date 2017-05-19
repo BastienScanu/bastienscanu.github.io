@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
 import {green500, green300} from 'material-ui/styles/colors';

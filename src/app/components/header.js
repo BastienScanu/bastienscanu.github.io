@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {Logo} from './logo';
 import i18n from 'i18next';
 import Scroll from 'react-scroll';
@@ -7,20 +8,24 @@ import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
 import {lightGreen50} from 'material-ui/styles/colors';
 
-const Header = React.createClass({
-  getInitialState() {
-    return {
-      openedMenu: false
-    };
-  },
+class Header extends Component {
+  constructor() {
+    super();
+    this.handleScroll = this.handleScroll.bind(this);
+    this.handleClickEn = this.handleClickEn.bind(this);
+    this.handleClickFr = this.handleClickFr.bind(this);
+    this.handleClickMenu = this.handleClickMenu.bind(this);
+    this.dynamicClass = this.dynamicClass.bind(this);
+    this.state = {openedMenu: false};
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-  },
+  }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
-  },
+  }
 
   handleScroll() {
     if (document.body.scrollTop > window.innerHeight / 2 - 50 || document.documentElement.scrollTop > window.innerHeight / 2 - 50) {
@@ -28,25 +33,25 @@ const Header = React.createClass({
     } else {
       document.getElementById("header").className = this.dynamicClass();
     }
-  },
+  }
 
   handleClickEn() {
     i18n.changeLanguage("en");
-  },
+  }
 
   handleClickFr() {
     i18n.changeLanguage("fr");
-  },
+  }
 
   handleClickMenu() {
     this.setState(state => {
       return {openedMenu: !state.openedMenu};
     });
-  },
+  }
 
   dynamicClass() {
     return `header${this.state.openedMenu ? "Mobile" : ""}`;
-  },
+  }
 
   render() {
     const {t} = this.props;
@@ -82,11 +87,11 @@ const Header = React.createClass({
       </header>
 
     );
-  },
-
-  propTypes: {
-    t: PropTypes.func
   }
-});
+}
+
+Header.propTypes = {
+  t: PropTypes.func
+};
 
 export default translate(["common", "header"], {wait: true})(Header);
