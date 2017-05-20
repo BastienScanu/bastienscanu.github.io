@@ -7,7 +7,7 @@ class FrontChart extends Component {
     super(props);
     this.state = {style: 0};
     this.nextStyle = this.nextStyle.bind(this);
-    this.intervals = [700, 700, 700, 700, 500, 100, 100, 100, 100, 700, 2000, 5000];
+    this.intervals = [700, 700, 700, 700, 500, 100, 100, 100, 100, 700, 2000, 2000, 700, 700, 700, 700, 700, 700, 700, 700];
   }
 
   componentDidMount() {
@@ -16,7 +16,7 @@ class FrontChart extends Component {
 
   nextStyle() {
     this.setState({
-      style: (this.state.style + 1) % 12
+      style: (this.state.style + 1) % 20
     });
     setTimeout(() => {
       this.nextStyle();

@@ -51,121 +51,144 @@
   #frontEnd {
     height: 100%;
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     p {
       transition: all 0.2s;
+      margin: auto;
     }
   }
 
   .frontEnd1 {
-    color: $vert;
+    color: rgb(255, 152, 0);
   }
 
   .frontEnd2 {
-    color: $vert;
+    @extend .frontEnd1;
     font-weight: bold;
   }
 
   .frontEnd3 {
+    @extend .frontEnd2;
     text-align: center;
-    color: $vert;
-    font-weight: bold;
   }
 
   .frontEnd4 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
+    @extend .frontEnd3;
+    font-size: 4em;
   }
 
   .frontEnd5 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
+    @extend .frontEnd4;
     text-shadow: 
-      0 1px 0 rgb(63, 195, 63);
+      0 1px 0 rgb(255, 192, 40);
   }
 
   .frontEnd6 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
+    @extend .frontEnd4;
     text-shadow:
-      0 1px 0 rgb(63, 195, 63),
-      0 2px 0 rgb(53, 185, 53);
+      0 1px 0 rgb(255, 192, 40),
+      0 2px 0 rgb(255, 162, 10);
   }
 
   .frontEnd7 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
+    @extend .frontEnd4;
     text-shadow:
-      0 1px 0 rgb(63, 195, 63),
-      0 2px 0 rgb(53, 185, 53),
-      0 3px 0 rgb(23, 155, 23);
+      0 1px 0 rgb(255, 192, 40),
+      0 2px 0 rgb(255, 162, 10),
+      0 3px 0 rgb(245, 152, 0);
   }
 
   .frontEnd8 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
+    @extend .frontEnd4;
     text-shadow:
-      0 1px 0 rgb(63, 195, 63),
-      0 2px 0 rgb(53, 185, 53),
-      0 3px 0 rgb(23, 155, 23),
-      0 4px 0 rgb(13, 145, 13);
+      0 1px 0 rgb(255, 192, 40),
+      0 2px 0 rgb(255, 162, 10),
+      0 3px 0 rgb(245, 152, 0),
+      0 4px 0 rgb(235, 142, 0);
   }
 
   .frontEnd9 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
+    @extend .frontEnd4;
     text-shadow: 
-      0 1px 0 rgb(63, 195, 63),
-      0 2px 0 rgb(53, 185, 53),
-      0 3px 0 rgb(23, 155, 23),
-      0 4px 0 rgb(13, 145, 13),
-      0 5px 0 rgb(3, 135, 3);
+      0 1px 0 rgb(255, 192, 40),
+      0 2px 0 rgb(255, 162, 10),
+      0 3px 0 rgb(245, 152, 0),
+      0 4px 0 rgb(235, 142, 0),
+      0 6px 0 rgb(225, 132, 0);
   }
 
   .frontEnd10 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
-    text-shadow: 
-      0 1px 0 rgb(63, 195, 63),
-      0 2px 0 rgb(53, 185, 53),
-      0 3px 0 rgb(23, 155, 23),
-      0 4px 0 rgb(13, 145, 13),
-      0 5px 0 rgb(3, 135, 3);
-      animation: bounce 0.35s ease infinite alternate;
-    }
+    @extend .frontEnd9;
+    animation: bounce 0.35s ease infinite alternate;
+  }
 
   .frontEnd11 {
-    text-align: center;
-    color: $vert;
-    font-size: 3.5em;
-    font-weight: bold;
+    @extend .frontEnd4;
     text-shadow: 
-      0 1px 0 rgb(63, 195, 63),
-      0 2px 0 rgb(53, 185, 53),
-      0 3px 0 rgb(23, 155, 23),
-      0 4px 0 rgb(13, 145, 13),
-      0 5px 0 rgb(3, 135, 3),
+      0 1px 0 rgb(255, 192, 40),
+      0 2px 0 rgb(255, 162, 10),
+      0 3px 0 rgb(245, 152, 0),
+      0 4px 0 rgb(235, 142, 0),
+      0 6px 0 rgb(225, 132, 0),
       longshadow(darken(white, 30%), white, 42, 0.5);
   }
 
   @keyframes bounce{
      from {transform: translateY(0);}
      to   {transform: translateY(-20px);}
-}
+  }
+
+  .frontEnd12 {
+    @extend .frontEnd11;
+    text-shadow: none;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20), 0px 1px 5px 0px rgba(0,0,0,0.13);
+  }
+
+  .frontEnd13 {
+    @extend .frontEnd12;
+    padding: 20px;
+    border-radius: 3px;
+  }
+
+  .frontEnd14 {
+    @extend .frontEnd13;
+    background: rgb(255, 152, 0);
+    color: white;
+  }
+
+  .frontEnd15 {
+    @extend .frontEnd14;
+    font-weight: 400;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.20), 0px 1px 5px rgba(0,0,0,0.13);
+  }
+
+  .frontEnd16 {
+    @extend .frontEnd15;
+    font-size: 2rem;
+  }
+
+  .frontEnd17 {
+    @extend .frontEnd16;
+    border-radius: 50px;
+    padding: 10px;
+  }
+
+  .frontEnd18 {
+    @extend .frontEnd17;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: none;
+  }
+
+  .frontEnd19 {
+    @extend .frontEnd18;
+    font-size: 0;
+    text-shadow: none;
+    height: 66px;
+    width: 66px;
+  }
 
   .sweat {
     background: url('../../images/carousel/sweat.png') no-repeat center center;
@@ -239,7 +262,7 @@
     }
 
     .orange:hover {
-      border-bottom: 3px solid rgb(256, 152, 0);
+      border-bottom: 3px solid rgb(255, 152, 0);
       padding-bottom: 3px;
     }
 
