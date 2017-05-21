@@ -6,14 +6,25 @@ class DesignChart extends Component {
   constructor(props) {
     super(props);
     this.images = ["sweat", "dynergie", "mineur", "kata"];
-    this.state = {image: 0};
+    this.state = {
+      image: 0,
+      play: true
+    };
+  }
+
+  componentWillUnmount() {
+    this.state = {
+      play: false
+    };
   }
 
   componentDidMount() {
     setInterval(() => {
-      this.setState({
-        image: (this.state.image + 1) % this.images.length
-      });
+      if (this.state.play) {
+        this.setState({
+          image: (this.state.image + 1) % this.images.length
+        });
+      }
     }, 2500);
   }
 

@@ -5,7 +5,10 @@ import {translate} from 'react-i18next';
 class FrontChart extends Component {
   constructor(props) {
     super(props);
-    this.state = {style: 0};
+    this.state = {
+      style: 0,
+      play: true
+    };
     this.nextStyle = this.nextStyle.bind(this);
     this.intervals = [700, 700, 700, 700, 500, 100, 100, 100, 100, 700, 2000, 2000, 700, 700, 700, 700, 700, 700, 700, 700];
   }
@@ -14,13 +17,21 @@ class FrontChart extends Component {
     this.nextStyle();
   }
 
+  componentWillUnmount() {
+    this.state = {
+      play: false
+    };
+  }
+
   nextStyle() {
-    this.setState({
-      style: (this.state.style + 1) % 20
-    });
-    setTimeout(() => {
-      this.nextStyle();
-    }, this.intervals[this.state.style]);
+    if (this.state.play) {
+      this.setState({
+        style: (this.state.style + 1) % 20
+      });
+      setTimeout(() => {
+        this.nextStyle();
+      }, this.intervals[this.state.style]);
+    }
   }
 
   render() {
