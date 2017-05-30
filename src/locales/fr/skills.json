@@ -1,5 +1,8 @@
 {
   "title": "Compétences",
+  "expert": "Expert",
+  "confirmed": "Confirmé",
+  "intermediate": "Intermediaire",
   "design": {
     "title": "Design",
     "technos": [

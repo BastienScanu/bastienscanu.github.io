@@ -1,5 +1,9 @@
 {
-  "title": "Skills","design": {
+  "title": "Skills",
+  "expert": "Expert",
+  "confirmed": "Confirmed",
+  "intermediate": "Intermediate",
+  "design": {
     "title": "Design",
     "technos": [
       {
