@@ -2,7 +2,7 @@ import {Collapse} from 'react-collapse';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
-import data from '../../../locales/fr/skills.json';
+import data from './mainSkillsData';
 import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
 
@@ -10,6 +10,7 @@ class MainSkill extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.data = data[this.props.name];
   }
 
   handleClick() {
@@ -20,17 +21,17 @@ class MainSkill extends Component {
     const {t} = this.props;
     const style = this.props.isOpened ?
     {
-      backgroundColor: t(`skills:${this.props.name}.color`),
+      backgroundColor: this.data.color,
       color: "#FFFFFF"
     } :
     {};
-    const technos = data[this.props.name].technos;
-    const className = t(`skills:${this.props.name}.theme`);
+    const technos = this.data.technos;
+    const className = this.data.theme;
     return (
       <div>
         <div className={`skillHeader ${className}`} style={style} onClick={this.handleClick}>
           <div>
-            <FontAwesome name={t(`skills:${this.props.name}.icon`)}/>
+            <FontAwesome name={this.data.icon}/>
             {t(`skills:${this.props.name}.title`)}
           </div>
           <FontIcon className="material-icons expand">{this.props.isOpened ? 'expand_less' : 'expand_more'}</FontIcon>
@@ -42,7 +43,7 @@ class MainSkill extends Component {
               <ul className="row">
               {technos.map(techno => {
                 return (
-                  <li className={techno.important ? "tag importantTag" : "tag"} key={techno.name}>{techno.name}</li>
+                  <li className={techno.important ? "tag importantTag" : "tag"} key={techno.name}>{t(`skills:${this.props.name}.technos.${techno.name}`)}</li>
                 );
               })}
               </ul>

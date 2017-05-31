@@ -5,148 +5,58 @@
   "intermediate": "Intermediate",
   "design": {
     "title": "Design",
-    "technos": [
-      {
-        "name": "Photoshop",
-        "important": true
-      },
-      {
-        "name": "Sketch",
-        "important": true
-      },
-      {
-        "name": "Illustrator",
-        "important": false
-      }
-    ],
-    "desc": "Creation of logos for associations, websites templates, t-shirts, stickers...",
-    "icon": "paint-brush",
-    "color": "#E62A10",
-    "theme": "red"
+    "technos": {
+      "toshop": "Photoshop",
+      "sketch": "Sketch",
+      "trator": "Illustrator"
+    },
+    "desc": "Creation of logos for associations, websites templates, t-shirts, stickers..."
   },
   "front": {
     "title": "Front-End",
-    "technos": [
-      {
-        "name": "HTML5",
-        "important": true
-      },
-      {
-        "name": "CSS3",
-        "important": true
-      },
-      {
-        "name": "ECMA Script 6",
-        "important": true
-      },
-      {
-        "name": "AngularJS",
-        "important": true
-      },
-      {
-        "name": "React",
-        "important": false
-      },
-      {
-        "name": "SASS",
-        "important": false
-      },
-      {
-        "name": "jQuery",
-        "important": false
-      }
-    ],
-    "desc": "Very good knowledge of web languages HTML5, CSS3 and Javascript. Mastery of modern frameworks  such as AngularJS and React.",
-    "icon": "desktop",
-    "color": "#FF9800",
-    "theme": "orange"
+    "technos": {
+      "html": "HTML5",
+      "css": "CSS3",
+      "es6": "ECMA Script 6",
+      "angular": "AngularJS",
+      "react": "React",
+      "sass": "SASS",
+      "jquery": "jQuery"
+    },
+    "desc": "Very good knowledge of web languages HTML5, CSS3 and Javascript. Mastery of modern frameworks  such as AngularJS and React."
   },
   "back": {
     "title": "Back-End",
-    "technos": [
-      {
-        "name": "ECMA Script 6",
-        "important": true
-      },
-      {
-        "name": "Node.js",
-        "important": true
-      },
-      {
-        "name": "PHP",
-        "important": false
-      },
-      {
-        "name": "Java",
-        "important": true
-      },
-      {
-        "name": "C/C++",
-        "important": false
-      },
-      {
-        "name": "Algorithmics",
-        "important": false
-      },
-      {
-        "name": "socket.io",
-        "important": true
-      }
-    ],
-    "desc": "Three years of business experience as Node.js (ES6) developer. Good skills in software programming and algorithmics.",
-    "icon": "cogs",
-    "color": "#2BAF2B",
-    "theme": "green"
+    "technos": {
+      "es6": "ECMA Script 6",
+      "node": "Node.js",
+      "php": "PHP",
+      "java": "Java",
+      "c": "C/C++",
+      "algo": "Algorithmics",
+      "socket": "socket.io"
+    },
+    "desc": "Three years of business experience as Node.js (ES6) developer. Good skills in software programming and algorithmics."
   },
   "database": {
     "title": "Databases",
-    "technos": [
-      {
-        "name": "MongoDB",
-        "important": true
-      },
-      {
-        "name": "Redis",
-        "important": false
-      },
-      {
-        "name": "SQL",
-        "important": true
-      }
-    ],
-    "desc": "Design and architecture of databases, relational and No-SQL databases management.",
-    "icon": "database",
-    "color": "#0277BD",
-    "theme": "blue"
+    "technos": {
+      "mongo": "MongoDB",
+      "redis": "Redis",
+      "sql": "SQL"
+    },
+    "desc": "Design and architecture of databases, relational and No-SQL databases management."
   },
   "os": {
     "title": "Operating Systems",
-    "technos": [
-      {
-        "name": "MacOS",
-        "important": true
-      },
-      {
-        "name": "Linux",
-        "important": true
-      },
-      {
-        "name": "Windows",
-        "important": true
-      },
-      {
-        "name": "Shell",
-        "important": true
-      },
-      {
-        "name": "Docker",
-        "important": false
-      }
-    ],
-    "desc": "Used to work with the three main operating systems. Use of Docker in the professional context.",
-    "icon": "terminal",
-    "color": "#AB47BC",
-    "theme": "purple"
+    "technos": {
+      "mac": "MacOS",
+      "linux": "Linux",
+      "win": "Windows",
+      "shell": "Shell",
+      "docker": "Docker"
+    },
+    "desc": "Used to work with the three main operating systems. Use of Docker in the professional context."
   },
   "dev": "Programming",
   "web": "Web Development",
@@ -171,25 +81,5 @@
     }
   },
   "dev": "Programming",
-  "web": "Web Development",
-  "others": "Other Skills",
-  "technos": {
-    "angular": "AngularJS",
-    "react": "React",
-    "nodejs": "Node.js",
-    "mongo": "MongoDB",
-    "express": "Express",
-    "java": "Java",
-    "php": "PHP",
-    "sql": "SQL",
-    "c": "C/C++",
-    "html": "HTML5",
-    "css": "CSS3",
-    "docker": "Docker",
-    "git": "Git",
-    "scrum": "SCRUM",
-    "machine": "Machine Learning",
-    "socket": "Socket.io",
-    "es6": "ECMA Script 6"
-  }
+  "web": "Web Development"
 }

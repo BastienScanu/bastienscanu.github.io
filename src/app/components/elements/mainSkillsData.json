@@ -1,0 +1,137 @@
+{
+  "design": {
+    "technos": [
+      {
+        "name": "toshop",
+        "important": true
+      },
+      {
+        "name": "sketch",
+        "important": true
+      },
+      {
+        "name": "trator",
+        "important": false
+      }
+    ],
+    "icon": "paint-brush",
+    "color": "#E62A10",
+    "theme": "red"
+  },
+  "front": {
+    "technos": [
+      {
+        "name": "html",
+        "important": true
+      },
+      {
+        "name": "css",
+        "important": true
+      },
+      {
+        "name": "es6",
+        "important": true
+      },
+      {
+        "name": "angular",
+        "important": true
+      },
+      {
+        "name": "react",
+        "important": false
+      },
+      {
+        "name": "sass",
+        "important": false
+      },
+      {
+        "name": "jquery",
+        "important": false
+      }
+    ],
+    "icon": "desktop",
+    "color": "#FF9800",
+    "theme": "orange"
+  },
+  "back": {
+    "technos": [
+      {
+        "name": "es6",
+        "important": true
+      },
+      {
+        "name": "node",
+        "important": true
+      },
+      {
+        "name": "php",
+        "important": false
+      },
+      {
+        "name": "java",
+        "important": true
+      },
+      {
+        "name": "c",
+        "important": false
+      },
+      {
+        "name": "algo",
+        "important": false
+      },
+      {
+        "name": "socket",
+        "important": true
+      }
+    ],
+    "icon": "cogs",
+    "color": "#2BAF2B",
+    "theme": "green"
+  },
+  "database": {
+    "technos": [
+      {
+        "name": "mongo",
+        "important": true
+      },
+      {
+        "name": "redis",
+        "important": false
+      },
+      {
+        "name": "sql",
+        "important": true
+      }
+    ],
+    "icon": "database",
+    "color": "#0277BD",
+    "theme": "blue"
+  },
+  "os": {
+    "technos": [
+      {
+        "name": "mac",
+        "important": true
+      },
+      {
+        "name": "linux",
+        "important": true
+      },
+      {
+        "name": "win",
+        "important": true
+      },
+      {
+        "name": "shell",
+        "important": true
+      },
+      {
+        "name": "docker",
+        "important": false
+      }
+    ],
+    "icon": "terminal",
+    "color": "#AB47BC",
+    "theme": "purple"
+  }
+}
