@@ -1,11 +1,88 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
+import {Bar} from 'react-chartjs-2';
+import skillsData from '../elements/mainSkillsData';
 
 class BackChart extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      item: 0,
+      play: true
+    };
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      if (this.state.play && this.state.item < skillsData.back.technos.length) {
+        this.setState({
+          item: this.state.item + 1
+        });
+      }
+    }, 200);
+  }
+
+  componentWillUnmount() {
+    this.state = {
+      play: false
+    };
+  }
+
   render() {
+    const {t} = this.props;
+    const backEndData = skillsData.back.technos;
+    const data = {
+      labels: backEndData.map(item => t(`skills:back.technos.${item.name}`)),
+      datasets: [
+        {
+          label: t(`skills:title`),
+          backgroundColor: "rgba(43, 175, 43, 0.7)",
+          borderColor: "rgb(43, 175, 43)",
+          data: backEndData.map((item, index) => {
+            if (index > this.state.item) {
+              return 0;
+            }
+            return item.value;
+          })
+        }
+      ]
+    };
+
+    const options = {
+      scales: {
+        yAxes: [{
+          id: 'y-axis-0',
+          ticks: {
+            min: 0,
+            max: 100,
+            maxTicksLimit: 6,
+            display: false
+          }
+        }]
+      },
+      tooltips: {
+        callbacks: {
+          label: tooltipItem => {
+            if (tooltipItem.yLabel > 70) {
+              return t(`skills:expert`);
+            }
+            if (tooltipItem.yLabel > 50) {
+              return t(`skills:confirmed`);
+            }
+            if (tooltipItem.yLabel > 30) {
+              return t(`skills:intermediate`);
+            }
+            return t(`skills:learning`);
+          }
+        }
+      }
+    };
     return (
-      <h3>Back-End !</h3>
+      <div>
+        <h3>{t('skills:back.title')}</h3>
+        <Bar data={data} options={options}/>
+      </div>
     );
   }
 }

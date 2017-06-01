@@ -3,6 +3,7 @@
   "expert": "Expert",
   "confirmed": "Confirmed",
   "intermediate": "Intermediate",
+  "learning": "Learning",
   "design": {
     "title": "Design",
     "technos": {
@@ -34,7 +35,8 @@
       "java": "Java",
       "c": "C/C++",
       "algo": "Algorithmics",
-      "socket": "socket.io"
+      "socket": "socket.io",
+      "python": "Python"
     },
     "desc": "Three years of business experience as Node.js (ES6) developer. Good skills in software programming and algorithmics."
   },
