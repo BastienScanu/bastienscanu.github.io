@@ -99,15 +99,18 @@
     "technos": [
       {
         "name": "mongo",
-        "important": true
-      },
-      {
-        "name": "redis",
-        "important": false
+        "important": true,
+        "value": 10
       },
       {
         "name": "sql",
-        "important": true
+        "important": true,
+        "value": 10
+      },
+      {
+        "name": "redis",
+        "important": false,
+        "value": 10
       }
     ],
     "icon": "database",
