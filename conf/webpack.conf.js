@@ -31,16 +31,8 @@ module.exports = {
         ]
       },
       {
-        test: /\.(eot|woff|woff2|svg|ttf)([?]?.*)$/,
-        loader: "file-loader"
-      },
-      {
-        test: /\.png$/,
-        loader: "url-loader?limit=100000"
-      },
-      {
-        test: /\.jpg$/,
-        loader: "file-loader"
+        test: /\.(jpg|jpeg|png|gif|ico|svg|json)$/,
+        loader: 'url-loader'
       }
     ]
   },
