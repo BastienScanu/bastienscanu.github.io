@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import {Bar} from 'react-chartjs-2';
-import skillsData from '../elements/mainSkillsData';
 
 class BackChart extends Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class BackChart extends Component {
 
   componentDidMount() {
     setInterval(() => {
-      if (this.state.play && this.state.item < skillsData.back.technos.length) {
+      if (this.state.play && this.state.item < this.props.data.length) {
         this.setState({
           item: this.state.item + 1
         });
@@ -31,7 +30,7 @@ class BackChart extends Component {
 
   render() {
     const {t} = this.props;
-    const backEndData = skillsData.back.technos;
+    const backEndData = this.props.data;
     const data = {
       labels: backEndData.map(item => t(`skills:back.technos.${item.name}`)),
       datasets: [
@@ -88,7 +87,8 @@ class BackChart extends Component {
 }
 
 BackChart.propTypes = {
-  t: PropTypes.func
+  t: PropTypes.func,
+  data: PropTypes.object
 };
 
 export default translate(["common", "skills"], {wait: true})(BackChart);

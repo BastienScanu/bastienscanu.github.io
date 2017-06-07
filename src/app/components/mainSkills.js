@@ -14,6 +14,153 @@ class MainSkills extends Component {
     this.updateState = this.updateState.bind(this);
     this.getChart = this.getChart.bind(this);
     this.state = {openedMenu: -1};
+    this.data = {
+      design: {
+        technos: [
+          {
+            name: "toshop",
+            important: true
+          },
+          {
+            name: "sketch",
+            important: true
+          },
+          {
+            name: "trator",
+            important: false
+          }
+        ],
+        icon: "paint-brush",
+        color: "#E62A10",
+        theme: "red"
+      },
+      front: {
+        technos: [
+          {
+            name: "html",
+            important: true
+          },
+          {
+            name: "css",
+            important: true
+          },
+          {
+            name: "es6",
+            important: true
+          },
+          {
+            name: "angular",
+            important: true
+          },
+          {
+            name: "react",
+            important: false
+          },
+          {
+            name: "sass",
+            important: false
+          },
+          {
+            name: "jquery",
+            important: false
+          }
+        ],
+        icon: "desktop",
+        color: "#FF9800",
+        theme: "orange"
+      },
+      back: {
+        technos: [
+          {
+            name: "algo",
+            important: false,
+            value: 70
+          },
+          {
+            name: "python",
+            important: false,
+            value: 30
+          },
+          {
+            name: "es6",
+            important: true,
+            value: 80
+          },
+          {
+            name: "node",
+            important: true,
+            value: 90
+          },
+          {
+            name: "php",
+            important: false,
+            value: 60
+          },
+          {
+            name: "java",
+            important: true,
+            value: 60
+          },
+          {
+            name: "c",
+            important: false,
+            value: 50
+          }
+        ],
+        icon: "cogs",
+        color: "#2BAF2B",
+        theme: "green"
+      },
+      database: {
+        technos: [
+          {
+            name: "mongo",
+            important: true,
+            value: 10
+          },
+          {
+            name: "sql",
+            important: true,
+            value: 10
+          },
+          {
+            name: "redis",
+            important: false,
+            value: 10
+          }
+        ],
+        icon: "database",
+        color: "#0277BD",
+        theme: "blue"
+      },
+      os: {
+        technos: [
+          {
+            name: "mac",
+            important: true
+          },
+          {
+            name: "linux",
+            important: true
+          },
+          {
+            name: "win",
+            important: true
+          },
+          {
+            name: "shell",
+            important: true
+          },
+          {
+            name: "docker",
+            important: false
+          }
+        ],
+        icon: "terminal",
+        color: "#AB47BC",
+        theme: "purple"
+      }
+    };
   }
 
   updateState(index) {
@@ -29,8 +176,8 @@ class MainSkills extends Component {
     switch (this.state.openedMenu) {
       case 0: return <DesignChart/>;
       case 1: return <FrontChart/>;
-      case 2: return <BackChart/>;
-      case 3: return <DatabaseChart/>;
+      case 2: return <BackChart data={this.data.back.technos}/>;
+      case 3: return <DatabaseChart data={this.data.database.technos}/>;
       case 4: return <OsChart/>;
       default: return <SkillsRadar/>;
     }
@@ -52,6 +199,7 @@ class MainSkills extends Component {
                 <MainSkill
                   name={skill}
                   key={index}
+                  data={this.data[skill]}
                   handler={this.updateState}
                   index={index}
                   isOpened={this.state.openedMenu === index}

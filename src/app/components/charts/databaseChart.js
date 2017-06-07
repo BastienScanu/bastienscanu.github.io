@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import {Doughnut} from 'react-chartjs-2';
-import skillsData from '../elements/mainSkillsData';
 
 class DatabaseChart extends Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class DatabaseChart extends Component {
 
   componentDidMount() {
     setInterval(() => {
-      if (this.state.item < skillsData.back.technos.length) {
+      if (this.state.item < this.props.data.length) {
         this.setState({
           item: this.state.item + 1
         });
@@ -24,7 +23,7 @@ class DatabaseChart extends Component {
 
   render() {
     const {t} = this.props;
-    const databaseData = skillsData.database.technos;
+    const databaseData = this.props.data;
     const data = {
       labels: databaseData.map(item => t(`skills:database.technos.${item.name}`)),
       datasets: [
@@ -62,7 +61,8 @@ class DatabaseChart extends Component {
 }
 
 DatabaseChart.propTypes = {
-  t: PropTypes.func
+  t: PropTypes.func,
+  data: PropTypes.object
 };
 
 export default translate(["common", "skills"], {wait: true})(DatabaseChart);

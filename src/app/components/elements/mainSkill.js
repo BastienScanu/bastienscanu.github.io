@@ -2,7 +2,6 @@ import {Collapse} from 'react-collapse';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
-import data from './mainSkillsData';
 import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
 
@@ -10,7 +9,6 @@ class MainSkill extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.data = data[this.props.name];
   }
 
   handleClick() {
@@ -21,17 +19,17 @@ class MainSkill extends Component {
     const {t} = this.props;
     const style = this.props.isOpened ?
     {
-      backgroundColor: this.data.color,
+      backgroundColor: this.props.data.color,
       color: "#FFFFFF"
     } :
     {};
-    const technos = this.data.technos;
-    const className = this.data.theme;
+    const technos = this.props.data.technos;
+    const className = this.props.data.theme;
     return (
       <div>
         <div className={`skillHeader ${className}`} style={style} onClick={this.handleClick}>
           <div>
-            <FontAwesome name={this.data.icon}/>
+            <FontAwesome name={this.props.data.icon}/>
             {t(`skills:${this.props.name}.title`)}
           </div>
           <FontIcon className="material-icons expand">{this.props.isOpened ? 'expand_less' : 'expand_more'}</FontIcon>
@@ -64,6 +62,7 @@ class MainSkill extends Component {
 MainSkill.propTypes = {
   t: PropTypes.func,
   name: PropTypes.string,
+  data: PropTypes.object,
   index: PropTypes.number,
   isOpened: PropTypes.bool,
   handler: PropTypes.func
