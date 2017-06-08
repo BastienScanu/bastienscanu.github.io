@@ -16,7 +16,7 @@ class About extends Component {
               <div className="row">
                 <button
                   className="withIcon"
-                  href="http://bastien-scanu.com/CV.pdf"
+                  href="https://bastienscanu.github.io/CV.pdf"
                   target="_blank"
                   >
                   <FontIcon className="material-icons" color="white">cloud_download</FontIcon>{t('about:cv')}
