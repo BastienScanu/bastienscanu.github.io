@@ -53,7 +53,6 @@ module.exports = {
     }),
     new UglifyESPlugin(),
     new ExtractTextPlugin('index-[contenthash].css'),
-    new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
     new webpack.LoaderOptionsPlugin({options: {postcss: [autoprefixer]}})
   ],
   output: {
