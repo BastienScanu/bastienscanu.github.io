@@ -71,7 +71,7 @@ class ActionButton extends Component {
             <div className="buttonLabel" style={{bottom}}>
               <label className="tooltip">{t('common:button.resume')}</label>
               <div className="smallButton red">
-                <a href="https://bastienscanu.github.io/CV.pdf" target="_blank">
+                <a href="https://bastien-scanu.com/CV.pdf" target="_blank">
                   <FontIcon color="white" className="material-icons">description</FontIcon>
                 </a>
               </div>
