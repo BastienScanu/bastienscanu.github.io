@@ -32,9 +32,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: [
-          'babel-loader'
-        ]
+        loader: 'babel-loader'
       },
       {
         test: /\.(jpg|jpeg|png|gif|ico|svg|json)$/,
@@ -53,6 +51,7 @@ module.exports = {
     }),
     new UglifyESPlugin(),
     new ExtractTextPlugin('index-[contenthash].css'),
+    new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
     new webpack.LoaderOptionsPlugin({options: {postcss: [autoprefixer]}})
   ],
   output: {
