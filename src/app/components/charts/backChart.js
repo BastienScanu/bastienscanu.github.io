@@ -56,7 +56,7 @@ class BackChart extends Component {
             min: 0,
             max: 100,
             maxTicksLimit: 6,
-            display: false
+            display: true
           }
         }]
       },
