@@ -22,7 +22,7 @@ export class Logo extends Component {
     const className = this.props.big ? (this.props.white ? "logoWhite" : "logoBlack") : "";
 
     return (
-      <a href="http://www.bastien-scanu.com" className={className}>
+      <a href="https://bastien-scanu.com" className={className}>
         <img src={logo} height={this.props.size} alt="Bastien Scanu"/>
       </a>
     );
