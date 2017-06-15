@@ -40,6 +40,18 @@ main {
   cursor: pointer;
 }
 
+.divider {
+  margin: -1px 0px 0px;
+  height: 1px;
+  border: none;
+  background-color: rgb(224, 224, 224);
+}
+
+.jobCardDivider {
+  @extend .divider;
+  margin: 15px 0px 5px;
+}
+
 /**
  * Basic styles for links
  */

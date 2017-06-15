@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
 import {Collapse} from 'react-collapse';
-import Divider from 'material-ui/Divider';
 
 class JobCard extends Component {
   constructor() {
@@ -52,7 +51,7 @@ class JobCard extends Component {
             <br/>
             <h1>{this.subTitles().mission}</h1>
             <p>{t(`experience:${this.props.name}.mission`)}</p>
-            <Divider style={{marginTop: 15, marginBottom: 5}}/>
+            <hr className="jobCardDivider" style={{marginTop: 15, marginBottom: 5}}/>
             <div className="row cardLinks">
               <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <a href={t(`experience:${this.props.name}.maps`)} target="_blank">

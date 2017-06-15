@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
 import {green500, green300} from 'material-ui/styles/colors';
-import Divider from 'material-ui/Divider';
 
 class Contact extends Component {
   render() {
@@ -23,7 +22,7 @@ class Contact extends Component {
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                   <h5><a href="tel:33618521891" target="_blank">+33 6 18 52 18 91</a></h5>
                   <h6>{t('contact:mobile')}</h6>
-                  <Divider/>
+                  <hr className="divider"/>
                 </div>
               </div>
               <div className="row">
@@ -35,7 +34,7 @@ class Contact extends Component {
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                   <h5><a href="mailto:bastien-scanu@gmail.com" target="_blank">bastien.scanu@gmail.com</a></h5>
                   <h6>{t('contact:personal')}</h6>
-                  <Divider/>
+                  <hr className="divider"/>
                 </div>
               </div>
               <div className="row">
@@ -47,7 +46,7 @@ class Contact extends Component {
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                   <h5><a href="https://www.google.fr/maps/place/Lyon/" target="_blank">Lyon, France</a></h5>
                   <h6>{t('contact:home')}</h6>
-                  <Divider/>
+                  <hr className="divider"/>
                 </div>
               </div>
             </div>
