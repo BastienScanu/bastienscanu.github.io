@@ -16,6 +16,14 @@
     color: rgba(153, 153, 153, 1);
     margin: 0 0.3rem 0.3rem 0.7rem;
   }
+
+  .material-icons {
+    color: #4CAF50;
+  }
+
+  .material-icons:hover {
+    color: #81C784;
+  }
 }
 
 @media only screen and (min-width: 48em) {

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
-import FontIcon from 'material-ui/FontIcon';
 import {Collapse} from 'react-collapse';
 
 class JobCard extends Component {
@@ -41,7 +40,7 @@ class JobCard extends Component {
             <h2>{t(`experience:${this.props.name}.job`)}</h2>
           </div>
           <div className="cardHeaderIcon">
-            <FontIcon className="material-icons">{t(`experience:${this.props.name}.type`)}</FontIcon>
+            <i className="material-icons">{t(`experience:${this.props.name}.type`)}</i>
           </div>
         </div>
         <div className="cardDetails">
@@ -55,18 +54,18 @@ class JobCard extends Component {
             <div className="row cardLinks">
               <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <a href={t(`experience:${this.props.name}.maps`)} target="_blank">
-                  <FontIcon className="material-icons">room</FontIcon> {t(`experience:${this.props.name}.location`)}
+                  <i className="material-icons">room</i> {t(`experience:${this.props.name}.location`)}
                 </a>
               </div>
               <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <a href={t(`experience:${this.props.name}.website`)} target="_blank">
-                  <FontIcon className="material-icons">language</FontIcon> {t(`experience:website`)}
+                  <i className="material-icons">language</i> {t(`experience:website`)}
                 </a>
               </div>
             </div>
           </Collapse>
           <div className="seeMore" onClick={this.handleCLickMore}>
-            <FontIcon className="material-icons">{this.state.seeDetails ? "keyboard_arrow_up" : "keyboard_arrow_down"}</FontIcon>
+            <i className="material-icons">{this.state.seeDetails ? "keyboard_arrow_up" : "keyboard_arrow_down"}</i>
           </div>
         </div>
         <div className="cardMedia">

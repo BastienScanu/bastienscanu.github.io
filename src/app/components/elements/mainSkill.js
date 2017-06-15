@@ -2,7 +2,6 @@ import {Collapse} from 'react-collapse';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
-import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
 
 class MainSkill extends Component {
@@ -32,7 +31,7 @@ class MainSkill extends Component {
             <FontAwesome name={this.props.data.icon}/>
             {t(`skills:${this.props.name}.title`)}
           </div>
-          <FontIcon className="material-icons expand">{this.props.isOpened ? 'expand_less' : 'expand_more'}</FontIcon>
+          <i className="material-icons expand">{this.props.isOpened ? 'expand_less' : 'expand_more'}</i>
         </div>
         <Collapse isOpened={this.props.isOpened}>
           <div className="margin"></div>

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
-import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
 import {spring, Motion} from 'react-motion';
 
@@ -58,7 +57,7 @@ class ActionButton extends Component {
               <label className="tooltip">{t('common:button.mail')}</label>
               <div className="smallButton orange">
                 <a href="mailto:bastien-scanu@gmail.com" target="_blank">
-                  <FontIcon color="white" className="material-icons">mail</FontIcon>
+                  <i className="material-icons">mail</i>
                 </a>
               </div>
             </div>
@@ -70,7 +69,7 @@ class ActionButton extends Component {
               <label className="tooltip">{t('common:button.resume')}</label>
               <div className="smallButton red">
                 <a href="https://bastien-scanu.com/CV.pdf" target="_blank">
-                  <FontIcon color="white" className="material-icons">description</FontIcon>
+                  <i className="material-icons">description</i>
                 </a>
               </div>
             </div>
@@ -78,7 +77,7 @@ class ActionButton extends Component {
         </Motion>
         <div className="mainButton">
           <div className="bigButton green">
-            <FontIcon color="white" className="material-icons">add</FontIcon>
+            <i className="material-icons">add</i>
           </div>
         </div>
       </div>
