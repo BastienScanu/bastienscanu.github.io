@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import ContentAdd from 'material-ui/svg-icons/content/add';
 import {translate} from 'react-i18next';
 import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
 import {spring, Motion} from 'react-motion';
 
 class ActionButton extends Component {
@@ -18,7 +16,7 @@ class ActionButton extends Component {
 
   initialPosition(childIndex) {
     return {
-      bottom: spring(-55 - 40 * childIndex)
+      bottom: spring(-51 - 46 * childIndex)
     };
   }
 
@@ -79,9 +77,9 @@ class ActionButton extends Component {
           }
         </Motion>
         <div className="mainButton">
-          <FloatingActionButton>
-            <ContentAdd/>
-          </FloatingActionButton>
+          <div className="bigButton green">
+            <FontIcon color="white" className="material-icons">add</FontIcon>
+          </div>
         </div>
       </div>
     );
