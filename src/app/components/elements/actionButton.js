@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import ContentAdd from 'material-ui/svg-icons/content/add';
 import {translate} from 'react-i18next';
-import FontIcon from 'material-ui/FontIcon';
 import FontAwesome from 'react-fontawesome';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
 import {spring, Motion} from 'react-motion';
 
 class ActionButton extends Component {
@@ -18,7 +15,7 @@ class ActionButton extends Component {
 
   initialPosition(childIndex) {
     return {
-      bottom: spring(-55 - 40 * childIndex)
+      bottom: spring(-51 - 46 * childIndex)
     };
   }
 
@@ -60,7 +57,7 @@ class ActionButton extends Component {
               <label className="tooltip">{t('common:button.mail')}</label>
               <div className="smallButton orange">
                 <a href="mailto:bastien-scanu@gmail.com" target="_blank">
-                  <FontIcon color="white" className="material-icons">mail</FontIcon>
+                  <i className="material-icons">mail</i>
                 </a>
               </div>
             </div>
@@ -72,16 +69,16 @@ class ActionButton extends Component {
               <label className="tooltip">{t('common:button.resume')}</label>
               <div className="smallButton red">
                 <a href="https://bastien-scanu.com/CV.pdf" target="_blank">
-                  <FontIcon color="white" className="material-icons">description</FontIcon>
+                  <i className="material-icons">description</i>
                 </a>
               </div>
             </div>
           }
         </Motion>
         <div className="mainButton">
-          <FloatingActionButton>
-            <ContentAdd/>
-          </FloatingActionButton>
+          <div className="bigButton green">
+            <i className="material-icons">add</i>
+          </div>
         </div>
       </div>
     );

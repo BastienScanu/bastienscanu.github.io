@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
-import FontIcon from 'material-ui/FontIcon';
 
 class About extends Component {
   render() {
@@ -16,7 +15,7 @@ class About extends Component {
               <div className="row">
                 <button className="withIcon">
                   <a href="https://bastien-scanu.com/CV.pdf" target="_blank">
-                    <FontIcon className="material-icons" color="white">cloud_download</FontIcon>{t('about:cv')}
+                    <i className="material-icons">cloud_download</i>{t('about:cv')}
                   </a>
                 </button>
               </div>

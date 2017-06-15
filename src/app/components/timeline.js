@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import FontIcon from 'material-ui/FontIcon';
 import JobCard from './elements/jobCard';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import Toggle from 'material-ui/Toggle';
+import Toggle from 'react-toggle';
 
 class Timeline extends Component {
   constructor() {
@@ -12,6 +10,8 @@ class Timeline extends Component {
     this.handleClickRight = this.handleClickRight.bind(this);
     this.disableClickLeft = this.disableClickLeft.bind(this);
     this.disableClickRight = this.disableClickRight.bind(this);
+    this.classLeft = this.classLeft.bind(this);
+    this.classRight = this.classRight.bind(this);
     this.handleChangeSchool = this.handleChangeSchool.bind(this);
     this.handleChangeJob = this.handleChangeJob.bind(this);
     this.handleGoToCard = this.handleGoToCard.bind(this);
@@ -46,6 +46,14 @@ class Timeline extends Component {
     return this.state.currentSlide >= cards.length - this.state.slidesToShow;
   }
 
+  classLeft(cards) {
+    return `bigButton green${this.disableClickLeft(cards) ? ' disabled' : ''}`;
+  }
+
+  classRight(cards) {
+    return `bigButton green${this.disableClickRight(cards) ? ' disabled' : ''}`;
+  }
+
   handleChangeSchool() {
     this.setState({currentSlide: 0});
     this.setState({school: !this.state.school});
@@ -74,18 +82,20 @@ class Timeline extends Component {
           <div className="buttons">
             <div>
               <Toggle
-                label={<FontIcon className="material-icons">school</FontIcon>}
-                toggled={this.state.school}
-                labelPosition="right"
-                onToggle={this.handleChangeSchool}
+                defaultChecked={this.state.school}
+                icons={{
+                  checked: <i className="material-icons">school</i>,
+                  unchecked: <i className="material-icons">school</i>
+                }}
+                onChange={this.handleChangeSchool}
                 />
-            </div>
-            <div>
               <Toggle
-                label={<FontIcon className="material-icons">work</FontIcon>}
-                toggled={this.state.job}
-                labelPosition="right"
-                onToggle={this.handleChangeJob}
+                defaultChecked={this.state.job}
+                icons={{
+                  checked: <i className="material-icons">work</i>,
+                  unchecked: <i className="material-icons">work</i>
+                }}
+                onChange={this.handleChangeJob}
                 />
             </div>
           </div>
@@ -119,12 +129,12 @@ class Timeline extends Component {
           </ul>
         </div>
         <div className="row arrows">
-          <FloatingActionButton onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
-            <FontIcon className="material-icons">keyboard_arrow_left</FontIcon>
-          </FloatingActionButton>
-          <FloatingActionButton onClick={this.handleClickRight} disabled={this.disableClickRight(cards)}>
-            <FontIcon className="material-icons">keyboard_arrow_right</FontIcon>
-          </FloatingActionButton>
+          <button className={this.classLeft(cards)} onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
+            <i className="material-icons">keyboard_arrow_left</i>
+          </button>
+          <button className={this.classRight(cards)} onClick={this.handleClickRight} disabled={this.disableClickRight(cards)}>
+            <i className="material-icons">keyboard_arrow_right</i>
+          </button>
         </div>
       </div>
     );

@@ -5,8 +5,6 @@ import i18n from 'i18next';
 import Scroll from 'react-scroll';
 const Link = Scroll.Link;
 import {translate} from 'react-i18next';
-import FontIcon from 'material-ui/FontIcon';
-import {lightGreen50} from 'material-ui/styles/colors';
 
 class Header extends Component {
   constructor() {
@@ -59,7 +57,7 @@ class Header extends Component {
       <header id="header" className={this.dynamicClass()}>
         <div className="container">
           <div className="showMenu">
-            <FontIcon onClick={this.handleClickMenu} className="material-icons" color={lightGreen50}>menu</FontIcon>
+            <i onClick={this.handleClickMenu} className="material-icons">menu</i>
           </div>
           <Logo size={32} big white/>
           <ul className="navBar">
