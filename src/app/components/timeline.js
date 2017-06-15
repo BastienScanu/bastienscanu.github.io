@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import FontIcon from 'material-ui/FontIcon';
 import JobCard from './elements/jobCard';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
 import Toggle from 'material-ui/Toggle';
 
 class Timeline extends Component {
@@ -12,6 +11,8 @@ class Timeline extends Component {
     this.handleClickRight = this.handleClickRight.bind(this);
     this.disableClickLeft = this.disableClickLeft.bind(this);
     this.disableClickRight = this.disableClickRight.bind(this);
+    this.classLeft = this.classLeft.bind(this);
+    this.classRight = this.classRight.bind(this);
     this.handleChangeSchool = this.handleChangeSchool.bind(this);
     this.handleChangeJob = this.handleChangeJob.bind(this);
     this.handleGoToCard = this.handleGoToCard.bind(this);
@@ -44,6 +45,14 @@ class Timeline extends Component {
 
   disableClickRight(cards) {
     return this.state.currentSlide >= cards.length - this.state.slidesToShow;
+  }
+
+  classLeft(cards) {
+    return `bigButton green${this.disableClickLeft(cards) ? ' disabled' : ''}`;
+  }
+
+  classRight(cards) {
+    return `bigButton green${this.disableClickRight(cards) ? ' disabled' : ''}`;
   }
 
   handleChangeSchool() {
@@ -119,12 +128,12 @@ class Timeline extends Component {
           </ul>
         </div>
         <div className="row arrows">
-          <FloatingActionButton onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
+          <button className={this.classLeft(cards)} onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
             <FontIcon className="material-icons">keyboard_arrow_left</FontIcon>
-          </FloatingActionButton>
-          <FloatingActionButton onClick={this.handleClickRight} disabled={this.disableClickRight(cards)}>
+          </button>
+          <button className={this.classRight(cards)} onClick={this.handleClickRight} disabled={this.disableClickRight(cards)}>
             <FontIcon className="material-icons">keyboard_arrow_right</FontIcon>
-          </FloatingActionButton>
+          </button>
         </div>
       </div>
     );

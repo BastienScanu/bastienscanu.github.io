@@ -56,6 +56,7 @@ button:hover {
   @extend .smallButton;
   width: 56px;
   height: 56px;
+  margin: 5px;
 }
 
 .green {
@@ -90,10 +91,11 @@ button:hover {
   background-color: rgb(256, 92, 66);
 }
 
-.disabled, .disabled:hover {
-  background-color: rgb(220, 220, 220);
-}
-
 .smallButton:hover {
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+}
+
+.disabled, .disabled:hover {
+  background-color: rgb(220, 220, 220);
+  cursor: default;
 }
