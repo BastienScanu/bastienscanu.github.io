@@ -27,7 +27,7 @@ class Header extends Component {
 
   handleScroll() {
     if (document.body.scrollTop > window.innerHeight / 2 - 50 || document.documentElement.scrollTop > window.innerHeight / 2 - 50) {
-      document.getElementById("header").className = `${this.dynamicClass()} green`;
+      document.getElementById("header").className = `${this.dynamicClass()} greenHeader`;
     } else {
       document.getElementById("header").className = this.dynamicClass();
     }
@@ -78,8 +78,8 @@ class Header extends Component {
             </li>
           </ul>
           <ul className="langs">
-            <li onClick={this.handleClickEn}>EN</li>
-            <li onClick={this.handleClickFr}>FR</li>
+            <li onClick={this.handleClickEn} className={i18n.language === "en" ? 'active' : ''}>EN</li>
+            <li onClick={this.handleClickFr} className={i18n.language === "fr" ? 'active' : ''}>FR</li>
           </ul>
         </div>
       </header>
