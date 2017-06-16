@@ -13,26 +13,33 @@
     justify-content: center;
   }
 
-  .arrows>div {
+  .buttons button {
     margin: 20px;
   }
 
   .timelineSettings {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+  }
+
+  .toggles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .timelineSettingsPanel {
+    display: flex;
+    justify-content: center;
     margin: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 9px 10px 4px rgba(0,0,0,0.17);
+    padding: 5px;
+    border-radius: 50px;
 
     .material-icons {
       font-size: 18px;
       color: white;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 5px;
-      border-radius: 25px;
     }
   }
 

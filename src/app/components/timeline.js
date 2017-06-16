@@ -78,28 +78,6 @@ class Timeline extends Component {
     const self = this;
     return (
       <div>
-        <div className="timelineSettings">
-          <div className="buttons">
-            <div>
-              <Toggle
-                defaultChecked={this.state.school}
-                icons={{
-                  checked: <i className="material-icons">school</i>,
-                  unchecked: <i className="material-icons">school</i>
-                }}
-                onChange={this.handleChangeSchool}
-                />
-              <Toggle
-                defaultChecked={this.state.job}
-                icons={{
-                  checked: <i className="material-icons">work</i>,
-                  unchecked: <i className="material-icons">work</i>
-                }}
-                onChange={this.handleChangeJob}
-                />
-            </div>
-          </div>
-        </div>
         <div className="row">
           {cards.map((card, index) => {
             if (index < self.state.currentSlide + self.state.slidesToShow && index >= self.state.currentSlide) {
@@ -121,20 +99,43 @@ class Timeline extends Component {
                   <li key={index} className="selectedDot" onClick={this.handleGoToCard}><span>{index}</span></li>
                 );
               }
-              return (
-                <li key={index} onClick={this.handleGoToCard}><span>{index}</span></li>
-              );
+              if (index < cards.length - this.state.slidesToShow + 1) {
+                return (
+                  <li key={index} onClick={this.handleGoToCard}><span>{index}</span></li>
+                );
+              }
+              return ('');
             })
             }
           </ul>
         </div>
-        <div className="row arrows">
-          <button className={this.classLeft(cards)} onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
-            <i className="material-icons">keyboard_arrow_left</i>
-          </button>
-          <button className={this.classRight(cards)} onClick={this.handleClickRight} disabled={this.disableClickRight(cards)}>
-            <i className="material-icons">keyboard_arrow_right</i>
-          </button>
+        <div className="row timelineSettings">
+          <div className="timelineSettingsPanel">
+            <button className={this.classLeft(cards)} onClick={this.handleClickLeft} disabled={this.disableClickLeft(cards)}>
+              <i className="material-icons">keyboard_arrow_left</i>
+            </button>
+            <div className="toggles">
+              <Toggle
+                defaultChecked={this.state.school}
+                icons={{
+                  checked: <i className="material-icons">school</i>,
+                  unchecked: <i className="material-icons">school</i>
+                }}
+                onChange={this.handleChangeSchool}
+                />
+              <Toggle
+                defaultChecked={this.state.job}
+                icons={{
+                  checked: <i className="material-icons">work</i>,
+                  unchecked: <i className="material-icons">work</i>
+                }}
+                onChange={this.handleChangeJob}
+                />
+            </div>
+            <button className={this.classRight(cards)} onClick={this.handleClickRight} disabled={this.disableClickRight(cards)}>
+              <i className="material-icons">keyboard_arrow_right</i>
+            </button>
+          </div>
         </div>
       </div>
     );
