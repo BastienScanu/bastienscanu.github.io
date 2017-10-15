@@ -43,6 +43,7 @@ class MyFooter extends Component {
               <p className="icons">
                 <a href="https://fr.linkedin.com/in/bastienscanu" target="_blank" title={t('footer:linkedin')}><FontAwesome name="linkedin-square"/></a>
                 <a href="https://github.com/BastienScanu" target="_blank" title={t('footer:github')}><FontAwesome name="github"/></a>
+                <a href="https://twitter.com/BastienScanu" target="_blank" title={t('footer:github')}><FontAwesome name="twitter"/></a>
               </p>
             </div>
           </div>
