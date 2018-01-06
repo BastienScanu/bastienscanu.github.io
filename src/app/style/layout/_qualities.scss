@@ -22,10 +22,16 @@
     margin: 10px;
     padding: 5px;
     text-align: center;
+    color: #222222;
 
     h5 {
       margin: 0;
     }
+  }
+
+  .topSkill:hover {
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .topSkill>div {
@@ -95,9 +101,44 @@
     background-size: contain;
   }
 
-  #technos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  #focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .modalContent {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      height: auto;
+      z-index: 2001;
+      transform: scale(2);
+      opacity: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  #focus:target {
+    pointer-events: auto;
+    visibility: visible;
+
+    .modalContent {
+      transform: translateX(-50%) translateY(-50%) scale(1);
+      opacity: 1; 
+      background-color: white;
+      color: rgba(0, 0, 0, 0.87);
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+      border-radius: 2px;
+      padding-bottom: 15px;
+      h1 {
+        text-align: center;
+      }
+    }
   }
 }

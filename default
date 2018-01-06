@@ -1,0 +1,71 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name bastien-scanu.com www.bastien-scanu.com; 
+    return 301 https://bastien-scanu.com$request_uri;
+}
+
+server {
+  listen 443 ssl;
+  listen [::]:443 ssl;
+  server_name www.bastien-scanu.com;
+  root /www;
+
+  ssl_certificate /etc/ssl/certs/bastien-scanu.com.certchain.crt;
+  ssl_certificate_key /etc/ssl/private/bastien-scanu.com.key;
+  index index.html index.htm index.nginx-debian.html;
+
+  ssl_session_cache shared:SSL:20m;
+  ssl_session_timeout 60m;
+ 
+  ssl_prefer_server_ciphers on;
+ 
+  ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DHE+AES128:!ADH:!AECDH:!MD5;
+ 
+  ssl_dhparam /etc/nginx/cert/dhparam.pem;
+ 
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  add_header Strict-Transport-Security "max-age=31536000" always;
+
+  location ~* \.(?:ico|css|js|gif|jpe?g|png|svg|json)$ {
+    expires 1M;
+    access_log        off;
+    log_not_found     off;
+  }
+
+  return 301 $scheme://bastien-scanu.com$request_uri;
+}
+
+server {
+  listen 443 ssl;
+  listen [::]:443 ssl;
+  server_name bastien-scanu.com;
+  root /www;
+
+  ssl_certificate /etc/ssl/certs/bastien-scanu.com.certchain.crt;
+  ssl_certificate_key /etc/ssl/private/bastien-scanu.com.key;
+  index index.html index.htm index.nginx-debian.html;
+
+  ssl_session_cache shared:SSL:20m;
+  ssl_session_timeout 60m;
+ 
+  ssl_prefer_server_ciphers on;
+ 
+  ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DHE+AES128:!ADH:!AECDH:!MD5;
+ 
+  ssl_dhparam /etc/nginx/cert/dhparam.pem;
+ 
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  add_header Strict-Transport-Security "max-age=31536000" always;
+
+  # redirects /en-US, /en-GB, etc to /en for trad files
+  rewrite "/en-[A-Z]{2}/(.*)" https://bastien-scanu.com/locales/en/$1;
+  # redirects /fr-FR, /fr-BE, etc to /fr for trad files
+  rewrite "/fr-[A-Z]{2}/(.*)" https://bastien-scanu.com/locales/fr/$1;
+
+  location ~* \.(?:ico|css|js|gif|jpe?g|png|svg|json)$ {
+    expires 1M;
+    access_log        off;
+    log_not_found     off;
+  }
+}
