@@ -143,7 +143,6 @@ class Timeline extends Component {
 }
 
 Timeline.propTypes = {
-  t: PropTypes.func,
   cards: PropTypes.arrayOf(PropTypes.object)
 };
 

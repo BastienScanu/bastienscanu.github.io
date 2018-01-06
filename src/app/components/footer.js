@@ -60,7 +60,7 @@ class MyFooter extends Component {
               </a>
               <a href="#close">
                 <img id="vader" src={Vader} width="64px" height="64px" alt={t('footer:close')}/><br/>
-                {t('footer:close')}
+                {t('common:close')}
               </a>
             </div>
           </div>
