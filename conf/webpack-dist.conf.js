@@ -6,12 +6,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyESPlugin = require('uglifyes-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const pkg = require('../package.json');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
   node: {
-   fs: "empty"
+    fs: 'empty'
   },
   module: {
     loaders: [
@@ -19,21 +18,15 @@ module.exports = {
         test: /\.js$/,
         enforce: 'pre',
         exclude: /node_modules/,
-        loader: 'eslint-loader'
+        loader: 'babel-loader'
       },
       {
         test: /\.(css|scss)$/,
         loaders: [
           'style-loader',
           'css-loader',
-          'sass-loader',
-          'postcss-loader'
+          'sass-loader'
         ]
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
       },
       {
         test: /\.(jpg|jpeg|png|gif|ico|svg|json)$/,
