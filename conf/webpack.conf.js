@@ -7,27 +7,19 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         enforce: 'pre',
         exclude: /node_modules/,
-        loader: 'eslint-loader'
+        loader: 'babel-loader'
       },
       {
         test: /\.(css|scss)$/,
         loaders: [
           'style-loader',
           'css-loader',
-          'sass-loader',
-          'postcss-loader'
-        ]
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: [
-          'babel-loader'
+          'sass-loader'
         ]
       },
       {

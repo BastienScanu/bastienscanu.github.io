@@ -21,8 +21,10 @@ class About extends Component {
               </div>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-              <p id="pitch">{t('about:pitch')}</p>
-              <p id="looking">{t('about:looking')}</p>
+              <div id="pitch">
+                <p>{t('about:pitch')}</p>
+                <p>{t('about:looking')}</p>
+              </div>
             </div>
             <div id="profileLogoCol" className="col-xs-12 col-sm-3 col-md-2 col-lg-2">
             </div>

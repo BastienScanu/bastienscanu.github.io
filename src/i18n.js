@@ -8,14 +8,14 @@ i18n
   .init({
     fallbackLng: 'en',
 
-    // have a common namespace used around the full app
+    // Have a common namespace used around the full app
     ns: ['common'],
     defaultNS: 'common',
 
     debug: false,
 
     interpolation: {
-      escapeValue: false // not needed for react!!
+      escapeValue: false // Not needed for react!!
     }
   });
 
