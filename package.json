@@ -4,7 +4,7 @@
   "license": "Hello",
   "dependencies": {
     "chart.js": "^2.3.0",
-    "gsap": "^1.19.1",
+    "gsap": "^3.6.0",
     "i18next": "^3.4.4",
     "i18next-browser-languagedetector": "^1.0.1",
     "i18next-xhr-backend": "^1.2.0",
